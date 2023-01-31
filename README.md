@@ -20,3 +20,10 @@ Quiero desarrollar el proyecto integrador para profundizar las tématicas del cu
 Joaquin Bernasconi, 20 años
 Estudiante 
 Me gustaría aprender mucho del mundo de la programación y con este proyecto creo que lo voy a hacer.
+
+
+https://www.kappastore.com.ar/   presentacion de categorias
+https://www.adidas.com.ar/       header
+https://www.underarmour.com.ar/  Presentacion individual de producto
+https://ar.puma.com/             Robapaginas
+https://www.nike.com/ar/         Footer
