@@ -8,8 +8,7 @@ Aldana Ingrassia, 28 anos
 Coordinador Logistico
 Estudiante de la carrera de Full Stack
 
-Nombre: Gabriel Van Den Bosch
-Edad: 20
+Gabriel Van Den Bosch, 20 años
 oficio: fabrica de muebles de cocina
 interes: trabajar como desarrollador web
 
