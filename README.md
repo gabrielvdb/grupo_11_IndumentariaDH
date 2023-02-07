@@ -30,3 +30,11 @@ https://www.underarmour.com.ar/  Presentación individual de producto. En este c
 https://ar.puma.com/             Robapaginas - En este caso, puma maneja un banner que ocupa el ancho total de la página para mostrar información relevante, como lo son promociones o lanzamientos de nuevas colecciones, lo cual, ubica al usuario frente a la novedad y despierta el interés de querer saber más.
 
 https://www.nike.com/ar/         Footer - Finalmente, el footer de Nike es simple y ubica las secciones e información más importante del sitio web. Adicional a esto, muestra sus redes sociales de forma sobria y elegante.
+
+**WIREFRAME DEL SITIO WEB DH INDUMENTARIA
+**https://www.figma.com/file/Tgs2KVJCmV0ENdJMHOKcub/Aldana-Ingrassia's-team-library?node-id=0%3A1&t=aNaz3K4jCi0rdVoL-1 
+
+**BOCETO DE LOGO, TIPOGRAFÍAS Y COLORES DEL SITIO WEB DH INDUMENTARIA
+**[Diseño Gráfico del Sitio DH Indumentaria.pdf](https://github.com/gabrielvdb/grupo_11_IndumentariaDH/files/10670371/Diseno.Grafico.del.Sitio.DH.Indumentaria.pdf)
+
+
