@@ -1,10 +1,10 @@
 # grupo_11_IndumentariaDH  
-E commerce dedicado a la venta de ropa de portiva para hombres de entre 20 - 50 anos,
+Somos un E commerce dedicado a la venta de ropa de portiva para hombres de entre 20 - 50 años,
 Los cuales son practicantes frerecuentes o realizan actividades fisicas varias, 
 con ingresos medio-altos.
 
 Integrantes: 
-- Aldana Ingrassia, 28 anos
+- Aldana Ingrassia, 28 años
 Coordinador Logistico
 Estudiante de la carrera de Full Stack
 
@@ -21,6 +21,7 @@ Estudiante
 Me gustaría aprender mucho del mundo de la programación y con este proyecto creo que lo voy a hacer.
 
 
+Referencias:
 https://www.kappastore.com.ar/   La presentacion de las categorias es atractivo, puesto que utiliza diferentes tamaños de imagen y al pasar el cursor del mouse la imagen hace un efecto de zoom.
 
 https://www.adidas.com.ar/       El header de adidas es limpio y claro con relación a las categorías y sub categorías de producto. Adicional a esto, cuenta con una barra de búsqueda, una icono para iniciar sesión en mi perfil personal y el carrito de compras que mostrará los productos que se vayan agregando.
