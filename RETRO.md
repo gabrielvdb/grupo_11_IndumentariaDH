@@ -2,7 +2,7 @@ SPRINT 2
 
 **La retrospectiva**
 
-Comenzar a hacer.
+1. Comenzar a hacer.
 
 Dividir las tareas de forma clara y precisa
 Utilizar de mejor forma los canales de comunicación
