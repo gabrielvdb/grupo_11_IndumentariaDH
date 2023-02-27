@@ -42,7 +42,7 @@ https://www.nike.com/ar/         Footer - Finalmente, el footer de Nike es simpl
 
 SPRINT 2
 
-<b>La retrospectiva<br>
+**La retrospectiva**
 
 Comenzar a hacer.
 
@@ -71,7 +71,9 @@ Dividir el trabajo bajo la premisa de que somos 6 en el grupo y que en algunas o
 Desaparecernos por mucho tiempo y la obligación de entregar los sprint sigue presente
 Dejar todo para lo último
 
-<b>El tablero de trabajo</b> 
+**El tablero de trabajo**
+
+
 
 
 
