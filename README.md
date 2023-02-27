@@ -73,7 +73,7 @@ Dejar todo para lo último
 
 **El tablero de trabajo**
 
-
+https://trello.com/b/QwLzagLt/dh-indumentaria 
 
 
 
