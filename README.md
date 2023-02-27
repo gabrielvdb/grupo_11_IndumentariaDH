@@ -44,8 +44,6 @@ SPRINT 2
 
 La retrospectiva
 
-Sprint 2
-
 Comenzar a hacer.
 
 Dividir las tareas de forma clara y precisa
