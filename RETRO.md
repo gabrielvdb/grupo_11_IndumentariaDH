@@ -6,8 +6,8 @@ Comenzar a hacer.
 
 Dividir las tareas de forma clara y precisa
 Utilizar de mejor forma los canales de comunicación
-Trabajar en el proyecto de acuerdo a la disponibilidad de cada uno de manera autónoma 
-.
+Trabajar en el proyecto de acuerdo a la disponibilidad de cada uno de manera autónoma.
+
 2. Hacer más.
 
 Comunicarnos más como grupo
