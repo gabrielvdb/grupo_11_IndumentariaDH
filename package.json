@@ -1,0 +1,16 @@
+{
+  "name": "dhindumentaria",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "node app.js"
+  },
+  "keywords": [],
+  "author": "Nicolas Camargo",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
