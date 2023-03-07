@@ -18,14 +18,18 @@ app.listen(port, function(){
 app.use(express.static(path.resolve(__dirname,"../public")));
 
 
-app.get("/home.html",function(req,res){
+app.get("/",function(req,res){
     res.sendFile(path.join(__dirname,"src/views/home.html"));
 })
 
-app.get("/register.html",function(req,res){
+app.get("/register",function(req,res){
     res.sendFile(path.join(__dirname,"src/views/register.html"));
 })
 
-app.get("/login.html",function(req,res){
+app.get("/login",function(req,res){
     res.sendFile(path.join(__dirname,"src/views/login.html"));
+})
+
+app.get("/productDetail",function(req,res){
+    res.sendFile(path.join(__dirname,"src/views/productDetail.html"));
 })
