@@ -28,3 +28,32 @@ Dividir el trabajo bajo la premisa de que somos 6 en el grupo y que en algunas o
 
 Desaparecernos por mucho tiempo y la obligación de entregar los sprint sigue presente
 Dejar todo para lo último
+
+
+SPRINT 3
+
+**La retrospectiva**
+
+1. Comenzar a hacer.
+
+Establecer rangos de tiempo para la entrega de las actividades
+Revisar los cambios de los compañeros y realizar las observaciones pertinentes.
+
+2. Hacer más.
+
+Poner más comentarios en el código que ayuden a ubicar a los otros compañeros sobre lo que se está haciendo
+Realizar código más prolijo.
+
+3. Continuar haciendo.
+
+Usar el grupo de WhatsApp como herramienta de comunicación y organización de forma más eficiente.
+Ayudar a los compañeros frente los inconvenientes o dudas que se les presenten.
+
+4. Hacer menos.
+
+Responder despues de mucho tiempo alguna inquietud de un compañero.
+
+5. Dejar de hacer.
+
+Entregar el sprint en el último momento
+
