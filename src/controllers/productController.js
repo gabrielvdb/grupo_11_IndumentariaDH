@@ -5,6 +5,14 @@ const productController = {
 
     productDetail: (req, res) => {
         res.render("products/productDetail");
+    },
+
+    addProduct: (req, res) => {
+        res.render("products/addProduct");
+    },
+
+    editProduct: (req, res) => {
+        res.render("products/editProduct");
     }
 }
 

@@ -13,10 +13,6 @@ app.set('view engine','ejs');
 
 app.use(express.static(path.resolve(__dirname,"./public")));
 app.use("/", homeRouter);
-/* app.use("/productCart", productRouter);
-app.use("/productDetail", productRouter);
-app.use("/login", userRouter);
-app.use("/register", userRouter); */
 app.use("/products", productRouter);
 app.use("/users", userRouter);
 

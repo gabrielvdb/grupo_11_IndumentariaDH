@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito de compra</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/productCart.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"rel="stylesheet"/>
+</head>
+<header class = "header">
+  <div class="interior">
+    <a href="/" class="logo" target="blank"><img src="../images/logo.jpg" alt="Logo"></a>
+
+    <nav class="navegacion">
+      <ul>
+        <input class="busqueda" type="search" placeholder="Busca tu producto">
+    
+        <li><a href="" target="blank">Ropa</a></li>
+        <li><a href="" target="blank">Calzado</a></li>
+        <li class="submenu">
+          <a href="" target="blank">Accesorios</a>
+          <ul class="hijos">
+            <li><a href="">blab</a></li>
+            <li><a href="">Item2</a></li>
+            <li><a href="">Item3</a></li>
+            <li><a href="">Item4</a></li>
+            <li><a href="">Item5</a></li>
+          </ul>
+        </li>
+        <li><a href="" target="blank">Contacto</a></li>
+        <li><a href="" target="blank">Login</a></li>
+        <li><a href="" target="blank">Register</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<body>
+    <h2>NUEVO PRODUCTO</h2>
+    <div class="row">
+        <div class="col-75">
+            <div class="container">
+            <form action="/action_page.php">
+      
+              <div class="row">
+                <div class="col-50">
+                  <h3>Datos del producto</h3>
+                  <label for="pname"><i class="fa fa-tag"></i> Nombre del Producto</label>
+                  <input type="text" id="fname" name="productName" placeholder="Buso Deportivo DH">
+                  <label for="description"><i class="fa fa-keyboard"></i> Descripción</label>
+                  <input type="text" id="email" name="productDescription" placeholder="Buso 100% algodón color gris">
+                  <label for="cat"><i class="fa fa-list"></i></i> Categoría</label>
+                  <input type="text" id="adr" name="category" placeholder="Busos">
+                  <label for="price"><i class="fa fa-money-bill"></i> Precio</label>
+                  <input type="text" id="city" name="price" placeholder="$10.000">
+      
+                  <div class="row">
+                    <div class="col-50">
+                      <label for="color"><i class="fa fa-palette"></i> Color</label>
+                      <input type="text" id="state" name="color" placeholder="Gris, Azul, Negro, Blanco, etc">
+                    </div>
+                    <div class="col-50">
+                      <label for="talles"><i class="fa fa-ruler"></i> Talle</label>
+                      <input type="text" id="zip" name="size" placeholder="s,m,l,xl">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-50">
+                    <h3>Imagen del producto</h3>
+                    <article class="articulo">
+                        <img class="imagenes-addProduct" src="/images/zapatillas1.png" alt="zapatillas1">
+                    </article>
+                </div>
+              </div>
+              
+              <input type="submit" value="Agregar Producto" class="btn">
+            </form>
+          </div>
+        </div>
+      </div>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-content-container">
+        <h3 class="website-logo">Indumentaria DH</h3>
+          <span class="footer-info">indumentariaDH@hotmail.com</span>
+      </div>
+      <div class="footer-menus">
+        <div class="footer-content-container">
+          <span class="menu-title">menu</span>
+            <a href="" class="menu-item-footer">Inicio</a>
+            <a href="" class="menu-item-footer">Registro</a>
+            <a href="" class="menu-item-footer">Contacto</a>
+        </div>
+        <div class="footer-content-container">
+          <span class="menu-title">legal</span>
+            <a href="" class="menu-item-footer">Privacy Policy</a>
+            <a href="" class="menu-item-footer">Cookies</a>
+            <a href="" class="menu-item-footer">Legal Advice</a>
+        </div>
+      </div>
+            
+      <div class="footer-content-container">
+        <span class="menu-title">follow us</span>
+      </div>
+    </div>
+        
+    <div class="copyright-container">
+            <span class="copyright">Copyright 2023, dhindumentaria.com. All rights reserved.</span>
+    </div>
+  </footer>
+
+</body>
+</html>

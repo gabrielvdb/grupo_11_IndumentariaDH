@@ -273,6 +273,15 @@ header{
     border-radius: 15px;
 }
 
+.imagenes-addProduct{
+  width: 80%;
+  margin: auto;
+  vertical-align: top;
+  border-radius: 15px;
+  margin-left: 50px;
+}
+
+
 .titular-2{
     display: flex;
     flex-wrap: nowrap;
@@ -379,6 +388,13 @@ footer .website-logo{
     h2{
         margin: 20px 5px 0 5px;
       }
+
+    .imagenes-addProduct{
+      width: 80%;
+      margin: auto;
+      vertical-align: top;
+      border-radius: 15px;
+    }
 
 /* FOOTER */
 
