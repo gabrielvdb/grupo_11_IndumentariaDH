@@ -121,7 +121,7 @@ main {
 .img-productos {
     display: flex;
     align-items: flex-end;
-    position: relative;
+    position: inherit;
     top: 350px;
     right: 650px;
     justify-content: space-around;

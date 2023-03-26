@@ -1,10 +1,10 @@
 {
-  "name": "formulario",
+  "name": "dhindumentaria",
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
     "test": "nodemon src/app.js",
-    "start": "node src/app.js"
+    "start": "nodemon src/app.js"
   },
   "keywords": [],
   "author": "",
@@ -17,5 +17,13 @@
   "devDependencies": {
     "nodemon": "^2.0.20"
   },
-  "description": ""
+  "description": "Somos un E commerce dedicado a la venta de ropa de portiva para hombres de entre 20 - 50 años,\r Los cuales son practicantes frerecuentes o realizan actividades fisicas varias, \r con ingresos medio-altos.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabrielvdb/grupo_11_IndumentariaDH.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gabrielvdb/grupo_11_IndumentariaDH/issues"
+  },
+  "homepage": "https://github.com/gabrielvdb/grupo_11_IndumentariaDH#readme"
 }
