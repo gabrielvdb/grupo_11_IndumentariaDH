@@ -1,0 +1,19 @@
+<div class="ps-col m6 ps-padding-large ps-hide-small">
+                <img
+                  src="../images/zapatillas2.png"
+                  class="ps-round ps-image ps-opacity-min"
+                  alt="Holaaaaaaaaaa"
+                  width="600"
+                  height="750"
+                />
+              </div>
+            <div class="ps-col m6 ps-padding-large">
+                <h1 class="ps-center"><%= locals.ropa.titulo %></h1>
+                <br />
+                <p class="ps-large">
+                  <%= locals.ropa.descripcion %>
+                </p>
+                <p class="ps-large ps-text-grey ps-hide-medium">
+                  <%= locals.ropa.categoria %>
+                </p>
+              </div>
