@@ -1,0 +1,68 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "OPEN SANS CONDENSED";
+}
+
+:root {
+    --amarillo: #EAC926;
+    --azul: #03264C;
+    --celeste: #1259c3;
+    --grisoscuro: #302f2d;
+    --grisclaro: #73706d;
+    --verde: #13972E;
+    --verdeclaro: #44CE6C;
+    --turquesa: #31A286;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    min-height: 100px;
+    background: black;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 50px;
+    margin-right: 10px;
+    width: auto;
+}
+
+.nombreEmpresa{
+    color: white;
+}
+
+nav a {
+    font-weight: 600;
+    color: white;
+    padding-right: 10px;
+}
+
+nav a:hover{
+    color: var(--verdeclaro);
+}
+
+@media (max-width:768px){
+    header{
+        flex-direction: column;
+        text-align: center;
+    }
+    nav{
+        padding: 10px 0px;
+    }
+}

@@ -1,0 +1,60 @@
+
+<%- include('../partials/head.ejs', {cssSheet: 'productDetailAldi'}) %>
+
+<%- include('../partials/header.ejs') %>
+
+<body>
+    <main>
+        
+      <div class="descripcionYnombreProducto">
+                    
+        <div class="descripcion-producto">
+            <img src="../images/buzoWilson1.jpg" alt="buzo 1" id="buzo1">
+            
+              <div class="descripcion-sin-imagen">
+                <h2>Buzo Gris Claro</h2>
+                <h3>$10.000 </h3>
+            
+                <h3>Cantidad</h3>
+                <select>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+                    
+                    <!-- //agregar carrito -->
+                
+                <h3>Talles</h3>
+                    <div class="talles">
+                        <select>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                    </div>
+        
+                <p> Buzo gris claro de algodon super resistente y comodo, sin friza, ideal para buzo urbano o deportivo</p>
+              </div>   
+        </div>
+        <section class="img-productos">
+          <img src="../images/buzoWilson2.jpg" alt="buzo 2" class=" img">
+          <img src="../images/buzoWilson3.jpg" alt="buzo 3" class=" img">
+          <img src="../images/buzoWilson4.jpg" alt="buzo 4" class=" img">   
+        </section> 
+      </div>     
+      
+    </main>
+    
+    <%- include('../partials/footer.ejs') %>
+
+  </body>
+</html>
+

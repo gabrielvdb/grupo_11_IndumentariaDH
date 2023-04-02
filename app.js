@@ -19,7 +19,7 @@ app.use("/users", userRouter);
 
 const port = process.env.PORT || 3000;
 app.listen(port, function(){
-    console.log("Servidor escuchando en le puerto 3000 http://localhost:" + port);
+    console.log("Servidor escuchando en el puerto 3000 http://localhost:" + port);
 });  
 
 //mover app.js a src!
