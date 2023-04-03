@@ -57,3 +57,24 @@ Responder despues de mucho tiempo alguna inquietud de un compañero.
 
 Entregar el sprint en el último momento
 
+SPRINT 3
+
+La retrospectiva
+
+Comenzar a hacer.
+Establecer desde el inicio del sprint las tareas a realizar y la metodología de trabajo para cumplir con los objetivos.
+
+Hacer más.
+Ser proactivos y tomar las tareas que se asignan en los sprint y desarrollarlas.
+Dividir el trabajo y asignar responsables.
+
+Continuar haciendo.
+Usar el grupo de WhatsApp como herramienta de comunicación y organización de forma más eficiente. 
+Ayudar a los compañeros frente los inconvenientes o dudas que se les presenten.
+
+
+Hacer menos.
+Desaparecerse o aparecer esporádicamente para realizar el proyecto.
+
+Dejar de hacer
+No entregar el sprint en el tiempo establecido
