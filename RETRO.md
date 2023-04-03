@@ -57,7 +57,7 @@ Responder despues de mucho tiempo alguna inquietud de un compañero.
 
 Entregar el sprint en el último momento
 
-SPRINT 3
+SPRINT 4
 
 La retrospectiva
 
