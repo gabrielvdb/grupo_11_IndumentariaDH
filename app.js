@@ -9,6 +9,8 @@ const userRouter = require("./src/routes/userRouter.js");
 
 
 app.set('views', path.resolve(__dirname,'./src/views'));
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
 app.set('view engine','ejs');
 
 app.use(express.static(path.resolve(__dirname,"./public")));

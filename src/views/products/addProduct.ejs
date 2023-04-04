@@ -8,19 +8,27 @@
     <div class="row">
         <div class="col-75">
             <div class="container">
-            <form action="/action_page.php">
+            <form action="/products" method="post">
+              <!-- <form id="formularioAlta" action="/productos" method="post"></form> -->
       
               <div class="row">
                 <div class="col-50">
                   <h3>Datos del producto</h3>
                   <label for="pname"><i class="fa fa-tag"></i> Nombre del Producto</label>
-                  <input type="text" id="fname" name="productName" placeholder="Buso Deportivo DH">
+                  <input type="text" id="fname" name="nombre" placeholder="Buso Deportivo DH">
+                  <label for="pname"><i class="fa fa-star"></i> Puntuación</label>
+                  <input type="text" id="fname" name="rate" placeholder="4.5">
+                  <label for="price"><i class="fa fa-money-bill"></i> Precio Antes</label>
+                  <input type="text" id="city" name="precioAntes" placeholder="20000">
+                  <label for="price"><i class="fa fa-dollar-sign"></i> Precio Ahora</label>
+                  <input type="text" id="city" name="precioAhora" placeholder="10000">
+                  <label for="price"><i class="fa fa-percent"></i> Descuento</label>
+                  <input type="text" id="city" name="discount" placeholder="50">
                   <label for="description"><i class="fa fa-keyboard"></i> Descripción</label>
-                  <input type="text" id="email" name="productDescription" placeholder="Buso 100% algodón color gris">
+                  <input type="text" id="email" name="descripcion" placeholder="Buso 100% algodón color gris">
                   <label for="cat"><i class="fa fa-list"></i></i> Categoría</label>
-                  <input type="text" id="adr" name="category" placeholder="Busos">
-                  <label for="price"><i class="fa fa-money-bill"></i> Precio</label>
-                  <input type="text" id="city" name="price" placeholder="$10.000">
+                  <input type="text" id="adr" name="categoria" placeholder="Busos">
+                  
       
                   <div class="row">
                     <div class="col-50">

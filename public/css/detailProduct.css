@@ -75,6 +75,13 @@ img{
 .product-content{
     padding: 2rem 1rem;
 }
+
+.addedit{
+    color: var(--verde);
+    font-size: 150%;
+}
+
+
 .product-title{
     font-size: 26px;
     text-transform: capitalize;

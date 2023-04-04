@@ -41,7 +41,9 @@
           </div>
           <!-- card right -->
           <div class = "product-content">
-            <h2 class = "product-title"><%= prenda.titulo %></h2>
+            <a class="addedit" href="/products/editProduct" target="blank"><i class="fa fa-recycle"></i></a>
+            <a class="addedit" href="/products/addProduct" target="blank"><i class="fa fa-plus"></i></a>
+            <h2 class = "product-title"><%= prenda.nombre %></h2>
             <a href = "/products/productList" class = "product-link"><%= prenda.categoria %></a>
             <div class = "product-rating">
               <i class = "fas fa-star"></i>
@@ -54,15 +56,15 @@
   
             <div class = "product-price">
               <p class = "last-price">Antes: <span><%= prenda.precioAntes %></span></p>
-              <p class = "new-price">Ahora: <span><%= prenda.precioAhora %> (<%= prenda.discount %>) </span></p>
+              <p class = "new-price">Ahora: <span><%= prenda.precioAhora %> (<%= prenda.discount %>%) </span></p>
             </div>
   
             <div class = "product-detail">
               <h2>Descripción del producto </h2>
               <p><%= prenda.descripcion %></p>
               <ul>
-                <li>Color: <span><%= prenda.color %></span></li>
                 <li>Categoria: <span><%= prenda.categoria %></span></li>
+                <li>Color: <span><%= prenda.color %></span></li>
                 <li>Talles
                     <div class="talles">
                         <select>
@@ -105,11 +107,11 @@
           <section class="contenedorProductosRelacionados">
               
               <article class="contenedorProducto">
-                  <a href="../../products/detailProduct/1"><img class="imagenProducto" src="/images/MaletaparaEntrenamiento1.jpg" alt="buzo 2"></a>
+                  <a href="../../products/detailProduct/2"><img class="imagenProducto" src="/images/MaletaparaEntrenamiento1.jpg" alt="buzo 2"></a>
                   <div class="infoProducto">
                     <div>
                         <span class="nombreProducto">Maleta para Entrenamiento</span>
-                        <span class="numeroPrecio">$ 12.500</span>
+                        <span class="numeroPrecio">$ 12500</span>
                     </div>
                     <button type = "button" class = "product-btn">
                       Agregar al Carrito 
@@ -118,11 +120,11 @@
               </article>
 
               <article class="contenedorProducto">
-                  <a href="../../productos/detalle/1"><img class="imagenProducto" src="/images/NikeAirForce1.jpg" alt="Colgante Arbol de la Vida"></a>
+                  <a href="../../products/detailProduct/7"><img class="imagenProducto" src="/images/NikeAirForce1.jpg" alt="Colgante Arbol de la Vida"></a>
                   <div class="infoProducto">
                     <div>
                         <span class="nombreProducto">Nike Air Force</span>
-                        <span class="numeroPrecio">$ 10.000</span>
+                        <span class="numeroPrecio">$ 10000</span>
                     </div>
                    <button type = "button" class = "product-btn">
                     Agregar al Carrito
@@ -131,11 +133,11 @@
               </article>
 
               <article class="contenedorProducto">
-                  <a href="../../productos/detalle/1"><img class="imagenProducto" src="/images/SudaderaRunningNike1.png" alt="Anillos Dorados"></a>
+                  <a href="../../products/detailProduct/6"><img class="imagenProducto" src="/images/SudaderaRunningNike1.png" alt="Anillos Dorados"></a>
                   <div class="infoProducto">
                     <div>
                         <span class="nombreProducto">Sudadera Running Nike</span>
-                        <span class="numeroPrecio">$ 10.000</span>
+                        <span class="numeroPrecio">$ 10000</span>
                     </div>
                     <button type = "button" class = "product-btn">
                       Agregar al Carrito
