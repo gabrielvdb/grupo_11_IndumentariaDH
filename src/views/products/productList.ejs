@@ -16,11 +16,11 @@
             
             <% locals.listaProductos.forEach(prenda => { %>
                 <article class="contenedorProducto"> 
-                    <a href="/products/detailProduct/<%= prenda.id %>"><img class="imagenProducto" src="/images/<%= prenda.img1 %>" alt="Imagen Producto"></a>
+                    <a href="/products/detailProduct/<%= prenda.id %>"><img class="imagenProducto" src="/images/products/<%= prenda.img1 %>" alt="Imagen Producto"></a>
                     <!-- <img class="rear-img" src="../images/buzo2.jpg" alt="rear product image"> -->
                     <div class="infoProducto">
                         <div>
-                            <span class="nombreProducto"><%= prenda.titulo %></span>
+                            <span class="nombreProducto"><%= prenda.nombre %></span>
                             <span class="numeroPrecio">$ <%= prenda.precioAhora %></span>
                         </div>
                         <a href = "#"><i class = "product-btn">Agregar al Carrito</i></a>

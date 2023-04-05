@@ -76,9 +76,19 @@ img{
     padding: 2rem 1rem;
 }
 
-.addedit{
+.addeditdelete{
     color: var(--verde);
     font-size: 150%;
+    padding: 15px;
+    transition: transform .2s; /* Animation */
+    margin: 0 auto;
+}
+
+.deletebutton{
+    color: white;
+    padding: 5px;
+    background: var(--verde);
+    margin: 10px;
 }
 
 

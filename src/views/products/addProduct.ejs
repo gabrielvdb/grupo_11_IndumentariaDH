@@ -8,47 +8,47 @@
     <div class="row">
         <div class="col-75">
             <div class="container">
-            <form action="/products" method="post">
+            <form action="/products" method="post" enctype="multipart/form-data">
               <!-- <form id="formularioAlta" action="/productos" method="post"></form> -->
       
               <div class="row">
                 <div class="col-50">
                   <h3>Datos del producto</h3>
-                  <label for="pname"><i class="fa fa-tag"></i> Nombre del Producto</label>
-                  <input type="text" id="fname" name="nombre" placeholder="Buso Deportivo DH">
-                  <label for="pname"><i class="fa fa-star"></i> Puntuación</label>
-                  <input type="text" id="fname" name="rate" placeholder="4.5">
-                  <label for="price"><i class="fa fa-money-bill"></i> Precio Antes</label>
-                  <input type="text" id="city" name="precioAntes" placeholder="20000">
-                  <label for="price"><i class="fa fa-dollar-sign"></i> Precio Ahora</label>
-                  <input type="text" id="city" name="precioAhora" placeholder="10000">
-                  <label for="price"><i class="fa fa-percent"></i> Descuento</label>
-                  <input type="text" id="city" name="discount" placeholder="50">
-                  <label for="description"><i class="fa fa-keyboard"></i> Descripción</label>
-                  <input type="text" id="email" name="descripcion" placeholder="Buso 100% algodón color gris">
-                  <label for="cat"><i class="fa fa-list"></i></i> Categoría</label>
-                  <input type="text" id="adr" name="categoria" placeholder="Busos">
+                  <label for="nombre"><i class="fa fa-tag"></i> Nombre del Producto</label>
+                  <input type="text" id="nombre" name="nombre" placeholder="Buso Deportivo DH" required>
+                  <label for="rate"><i class="fa fa-star"></i> Puntuación</label>
+                  <input type="text" id="rate" name="rate" placeholder="4.5" required>
+                  <label for="precioAntes"><i class="fa fa-money-bill"></i> Precio Antes</label>
+                  <input type="text" id="precioAntes" name="precioAntes" placeholder="20000" required>
+                  <label for="precioAhora"><i class="fa fa-dollar-sign"></i> Precio Ahora</label>
+                  <input type="text" id="precioAhora" name="precioAhora" placeholder="10000" required>
+                  <label for="discount"><i class="fa fa-percent"></i> Descuento</label>
+                  <input type="text" id="discount" name="discount" placeholder="50" required>
+                  <label for="descripcion"><i class="fa fa-keyboard"></i> Descripción</label>
+                  <textarea name="descripcion" id="descripcion" rows="4" cols="50" placeholder="Buso 100% algodón color gris" required></textarea>
+                  <label for="categoria"><i class="fa fa-list"></i></i> Categoría</label>
+                  <input type="text" id="categoria" name="categoria" placeholder="Busos" required>
                   
       
                   <div class="row">
                     <div class="col-50">
                       <label for="color"><i class="fa fa-palette"></i> Color</label>
-                      <input type="text" id="state" name="color" placeholder="Gris, Azul, Negro, Blanco, etc">
+                      <input type="text" id="color" name="color" placeholder="Gris, Azul, Negro, Blanco, etc" required>
                     </div>
                     <div class="col-50">
-                      <label for="talles"><i class="fa fa-ruler"></i> Talle</label>
-                      <input type="text" id="zip" name="size" placeholder="s,m,l,xl">
+                      <label for="size"><i class="fa fa-ruler"></i> Talle</label required>
+                      <input type="text" id="size" name="size" placeholder="s,m,l,xl">
                     </div>
                     <div class="col-50">
-                      <label for="uploadimages"><i class="fa fa-file-import"></i> Subir Imagen</label>
-                      <input type="submit" value="Agregar Imagen" class="btn">
+                      <label for="productImage"><i class="fa fa-file-import"></i> Subir Imagen</label>
+                      <input type="file" name="productImage" value="Agregar Imagen" >
                     </div>
                   </div>
                 </div>
                 <div class="col-50">
                     <h3>Imagen del producto</h3>
                     <article class="articulo">
-                        <img class="imagenes-addProduct" src="/images/NikeProRunning1.jpg" alt="zapatillas1">
+                        <img class="imagenes-addProduct" src="/images/products/default-product-image.png" alt="defaultImage">
                     </article>
                     <!-- <input type="submit" value="Agregar Imagen" class="btn"> -->
                 </div>

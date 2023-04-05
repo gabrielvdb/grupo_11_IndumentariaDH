@@ -9,42 +9,46 @@
           <div class = "product-imgs">
             <div class = "img-display">
               <div class = "img-showcase">
-                <img id="imagenProducto" src="/images/<%= prenda.img1 %>" alt="Buzo Wilson">
-                <img src="/images/<%= prenda.img1 %>" alt = "buzo1">
-                <img src="/images/<%= prenda.img2 %>" alt = "buzo2">
-                <img src="/images/<%= prenda.img3 %>" alt = "buzo3">
-                <img src="/images/<%= prenda.img4 %>" alt = "buzo4">
+                <img id="imagenProducto" src="/images/products/<%= prenda.img1 %>" alt="Buzo Wilson">
+                <img src="/images/products/<%= prenda.img1 %>" alt = "buzo1">
+                <img src="/images/products/<%= prenda.img2 %>" alt = "buzo2">
+                <img src="/images/products/<%= prenda.img3 %>" alt = "buzo3">
+                <img src="/images/products/<%= prenda.img4 %>" alt = "buzo4">
               </div>
             </div>
             <div class = "img-select">
               <div class = "img-item">
                 <a href = "#" data-id = "1">
-                  <img src="/images/<%= prenda.img1 %>" alt = "buzo1">
+                  <img src="/images/products/<%= prenda.img1 %>" alt = "buzo1">
                 </a>
               </div>
               <div class = "img-item">
                 <a href = "#" data-id = "2">
-                  <img src="/images/<%= prenda.img2 %>" alt = "buzo2">
+                  <img src="/images/products/<%= prenda.img2 %>" alt = "buzo2">
                 </a>
               </div>
               <div class = "img-item">
                 <a href = "#" data-id = "3">
-                  <img src="/images/<%= prenda.img3 %>" alt = "buzo3">
+                  <img src="/images/products/<%= prenda.img3 %>" alt = "buzo3">
                 </a>
               </div>
               <div class = "img-item">
                 <a href = "#" data-id = "4">
-                  <img src="/images/<%= prenda.img4 %>" alt = "buzo4">
+                  <img src="/images/products/<%= prenda.img4 %>" alt = "buzo4">
                 </a>
               </div>
             </div>
           </div>
           <!-- card right -->
           <div class = "product-content">
-            <a class="addedit" href="/products/editProduct" target="blank"><i class="fa fa-recycle"></i></a>
-            <a class="addedit" href="/products/addProduct" target="blank"><i class="fa fa-plus"></i></a>
+            <a class="addeditdelete" href="/../products/editProduct/<%= prenda.id %>" target="blank"><i class="fa fa-recycle"></i></a>
+            <a class="addeditdelete" href="/products/addProduct" target="blank"><i class="fa fa-plus"></i></a>  
+            <form action="/products/delete/<%= prenda.id %>?_method=DELETE" method="POST" style="display: inline-flex">
+							<button type="submit" class="deletebutton">ELIMINAR</button>
+						</form>     
+            
             <h2 class = "product-title"><%= prenda.nombre %></h2>
-            <a href = "/products/productList" class = "product-link"><%= prenda.categoria %></a>
+            <a href = "/products/" class = "product-link"><%= prenda.categoria %></a>
             <div class = "product-rating">
               <i class = "fas fa-star"></i>
               <i class = "fas fa-star"></i>
@@ -107,7 +111,7 @@
           <section class="contenedorProductosRelacionados">
               
               <article class="contenedorProducto">
-                  <a href="../../products/detailProduct/2"><img class="imagenProducto" src="/images/MaletaparaEntrenamiento1.jpg" alt="buzo 2"></a>
+                  <a href="../../products/detailProduct/2"><img class="imagenProducto" src="/images/products/MaletaparaEntrenamiento1.jpg" alt="buzo 2"></a>
                   <div class="infoProducto">
                     <div>
                         <span class="nombreProducto">Maleta para Entrenamiento</span>
@@ -120,7 +124,7 @@
               </article>
 
               <article class="contenedorProducto">
-                  <a href="../../products/detailProduct/7"><img class="imagenProducto" src="/images/NikeAirForce1.jpg" alt="Colgante Arbol de la Vida"></a>
+                  <a href="../../products/detailProduct/7"><img class="imagenProducto" src="/images/products/NikeAirForce1.jpg" alt="Colgante Arbol de la Vida"></a>
                   <div class="infoProducto">
                     <div>
                         <span class="nombreProducto">Nike Air Force</span>
@@ -133,7 +137,7 @@
               </article>
 
               <article class="contenedorProducto">
-                  <a href="../../products/detailProduct/6"><img class="imagenProducto" src="/images/SudaderaRunningNike1.png" alt="Anillos Dorados"></a>
+                  <a href="../../products/detailProduct/6"><img class="imagenProducto" src="/images/products/SudaderaRunningNike1.png" alt="Anillos Dorados"></a>
                   <div class="infoProducto">
                     <div>
                         <span class="nombreProducto">Sudadera Running Nike</span>
