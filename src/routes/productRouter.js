@@ -36,7 +36,6 @@ router.patch("/editProduct/:id", upload.single("productImage") ,productControlle
 
 /* Eliminar un producto */
 router.delete("/delete/:id", productController.deleteProduct);
-/* router.delete('/delete/:id', productsController.destroy); */
 
 /* Carrito de Compras */
 router.get("/productCart", productController.productCart);

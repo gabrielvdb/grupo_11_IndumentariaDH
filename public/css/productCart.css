@@ -24,6 +24,10 @@ body{
 
 /* FORMULARIO DE COMPRAS */
 
+.tittleSpace{
+  margin-top: 20px;
+}
+
 .row {
     display: -ms-flexbox; /* IE10 */
     display: flex;

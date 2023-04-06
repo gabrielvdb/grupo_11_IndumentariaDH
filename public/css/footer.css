@@ -1,3 +1,28 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "OPEN SANS CONDENSED";
+}
+
+:root {
+    --amarillo: #EAC926;
+    --azul: #03264C;
+    --celeste: #1259c3;
+    --grisoscuro: #302f2d;
+    --grisclaro: #73706d;
+    --verde: #13972E;
+    --verdeclaro: #44CE6C;
+    --turquesa: #31A286;
+
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
 /* FOOTER */
 
 footer{
@@ -76,6 +101,21 @@ footer .website-logo{
     font-weight: 400;
     text-transform: uppercase;
     margin-bottom: 1.2rem;
+}
+
+.footer-container a:hover{
+    color: var(--verdeclaro);
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 50px;
+    margin-right: 10px;
+    width: auto;
 }
 
 @media (max-width: 768px){

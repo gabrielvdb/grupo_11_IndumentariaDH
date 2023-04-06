@@ -38,7 +38,7 @@ const productController = {
         let productoNuevo = {
             id: listaProductos[listaProductos.length -1].id +1,
             nombre: req.body.nombre,
-            rate: parseInt(req.body.rate),
+            rate: req.body.rate,
             precioAntes: parseInt(req.body.precioAntes),
             precioAhora: parseInt(req.body.precioAhora),
             discount: parseInt(req.body.discount),
@@ -77,7 +77,7 @@ const productController = {
         let productoEditado = {
             id: prendaId,
 			nombre: req.body.nombre,
-            rate: parseInt(req.body.rate),
+            rate: req.body.rate,
             precioAntes: parseInt(req.body.precioAntes),
             precioAhora: parseInt(req.body.precioAhora),
             discount: parseInt(req.body.discount),

@@ -1,7 +1,7 @@
 [
  {
   "id": 1,
-  "titulo": "Buso Deportivo Wilson",
+  "nombre": "Buso Deportivo Wilson",
   "rate": 4.5,
   "precioAntes": 10000,
   "precioAhora": 8000,
@@ -16,7 +16,7 @@
  },
  {
   "id": 2,
-  "titulo": "Maleta para Entrenar",
+  "nombre": "Maleta para Entrenar",
   "rate": 4.2,
   "precioAntes": 25000,
   "precioAhora": 12500,
@@ -31,7 +31,7 @@
  },
  {
   "id": 3,
-  "titulo": "Nike Pro Running",
+  "nombre": "Nike Pro Running",
   "rate": 4.8,
   "precioAntes": 6000,
   "precioAhora": 3000,
@@ -46,7 +46,7 @@
  },
  {
   "id": 4,
-  "titulo": "Tenis de Running Nike",
+  "nombre": "Tenis de Running Nike",
   "rate": 4.7,
   "precioAntes": 20000,
   "precioAhora": 10000,
@@ -61,7 +61,7 @@
  },
  {
   "id": 5,
-  "titulo": "Riñonera Nike Heritage",
+  "nombre": "Riñonera Nike Heritage",
   "rate": 4.2,
   "precioAntes": 25000,
   "precioAhora": 12500,
@@ -76,7 +76,7 @@
  },
  {
   "id": 6,
-  "titulo": "Sudadera Running Nike",
+  "nombre": "Sudadera Running Nike",
   "rate": 4.1,
   "precioAntes": 20000,
   "precioAhora": 10000,
@@ -91,7 +91,7 @@
  },
  {
   "id": 7,
-  "titulo": "Nike Air Force",
+  "nombre": "Nike Air Force",
   "rate": 4.3,
   "precioAntes": 20000,
   "precioAhora": 10000,
@@ -106,7 +106,7 @@
  },
  {
   "id": 8,
-  "titulo": "Manos Libres Nike",
+  "nombre": "Manos Libres Nike",
   "rate": 4.1,
   "precioAntes": 15000,
   "precioAhora": 7500,
@@ -121,7 +121,7 @@
  },
  {
   "id": 9,
-  "titulo": "Jordan Essentials",
+  "nombre": "Jordan Essentials",
   "rate": 4.1,
   "precioAntes": 40000,
   "precioAhora": 20000,
