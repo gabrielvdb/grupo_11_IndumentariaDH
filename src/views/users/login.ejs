@@ -3,17 +3,35 @@
 
 <%- include('../partials/header.ejs') %>
 
-<section class="form-registro">
+<!-- <section class="form-registro">
     <h4>¡Bienvenido!</h4>
     <input class="controls" type="text" name="nombre" id="nombre" placeholder="Nombre de usuario">
     <input class="controls" type="text" name="apellido" id="apellido" placeholder="Contraseña">
     <br>
     <br>
     <input class="boton" type="submit" value="Ingresar">
-    
-    
+</section> -->
 
-</section>
+<form action="action_page.php" method="post">
+    <h3>¡Bienvenid@!</h3>
+    <div class="container">
+      <label for="nombreUsuario"><b>Nombre de Usuari@</b></label>
+      <input type="text" placeholder="Nombre de Usuario" name="uname" required>
+  
+      <label for="psw"><b>Contraseña</b></label>
+    <input type="password" placeholder="Contraseña" name="psw" required>
+  
+      <button type="submit">Ingresar</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Recordar
+      </label>
+    </div>
+  
+    <div class="container">
+      <button type="button" class="cancelbtn">Cancelar</button>
+      <span class="psw">¿Olvidaste tu <a href="#">contraseña?</a></span>
+    </div>
+</form>
 
 <%- include('../partials/footer.ejs') %>
 

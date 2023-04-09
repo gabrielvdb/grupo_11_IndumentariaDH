@@ -59,24 +59,27 @@ Entregar el sprint en el último momento
 
 SPRINT 4
 
-La retrospectiva
+**La retrospectiva**
 
 1. Comenzar a hacer.
 
 Establecer desde el inicio del sprint las tareas a realizar y la metodología de trabajo para cumplir con los objetivos.
+Revisar el Trello para identificr las tareas pendientes
 
 2. Hacer más.
 
 Ser proactivos y tomar las tareas que se asignan en los sprint y desarrollarlas.
 Dividir el trabajo y asignar responsables.
+Establecer Deadlines y ajustar los tiempos de cada uno para cumplir los tiempps establecidos
 
 3. Continuar haciendo.
 Usar el grupo de WhatsApp como herramienta de comunicación y organización de forma más eficiente. 
 Ayudar a los compañeros frente los inconvenientes o dudas que se les presenten.
-
+Entregando los Sprint
 
 4. Hacer menos.
 Desaparecerse o aparecer esporádicamente para realizar el proyecto.
 
 5. Dejar de hacer
 No entregar el sprint en el tiempo establecido
+No realizar ningún commit durante el tiempo del sprint

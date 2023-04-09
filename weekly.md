@@ -27,5 +27,24 @@ Cada equipo habla como máximo tres minutos de tres temas puntuales:
 
 - Comenzar a desarrollar el Sprint 4
 
+**Segundo weekly - Domingo 9 de Marzo**
+
+<b> Qué hizo la semana pasada. </b>
+
+- Se agregaron las bases de datos.JSON y se agrego la ruta y el controller para el método POST de agregar un producto
+- Se agregaron ajustes al archivo RETRO.md
+- Se agregaron las rutas y los metodos dentro del controller para Agregar, editar y eliminar productos
+- Se ajusto el home
+
+<b> Si se encontró con algún impedimento. </b>
+
+- Conservar la información previa al momento de editar un producto
+- Actualizar la lista de productos automaticamente cuando se adicione un producto
+- Eliminar el producto y actualizar la base de datos
+
+<b> Qué va a hacer esta semana. </b>
+
+- Comenzar a desarrollar el Sprint 5
+
 
 
