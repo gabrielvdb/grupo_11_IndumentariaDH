@@ -81,8 +81,9 @@ h3{
 
 form {
     border: 30px solid#f9f9f9;
-    width: 600px;
-    /* width: fit-content; */
+    /* width: 600px; */
+    max-width: 600px;
+    width: fit-content;
     padding: 30px;
     margin: auto;
     background: black;
