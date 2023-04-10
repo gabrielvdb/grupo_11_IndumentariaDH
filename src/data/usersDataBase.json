@@ -7,40 +7,36 @@
         "email":"nicolascamargo@gmail.com",
         "contraseña":"NicolasCamargo123",
         "categoria": "admin",
-        "imagen":"user.png",
-        "edad": 27
+        "imagen":"user.png"
     },
     {
         "id": 1,
         "nombre": "Luz",
         "apellido": "Castro",
-        "Fecha de Nacimiento": "21/07/1992",
+        "Fecha de Nacimiento": "11/07/1992",
         "email":"luzcastro@gmail.com",
         "contraseña":"LuzCastro123",
         "categoria": "admin",
-        "imagen":"woman.png",
-        "edad": 31
+        "imagen":"woman.png"
     },
     {
         "id": 1,
         "nombre": "Gerardo",
         "apellido": "Vallejo",
-        "Fecha de Nacimiento": "11/02/1985",
+        "Fecha de Nacimiento": "10/02/1985",
         "email":"gerardovallejo@gmail.com",
         "contraseña":"GerardoVallejo123",
         "categoria": "admin",
-        "imagen":"man.png",
-        "edad": 38
+        "imagen":"man.png"
     },
     {
         "id": 1,
         "nombre": "Laura",
         "apellido": "Contreras",
-        "Fecha de Nacimiento": "23/12/2000",
+        "Fecha de Nacimiento": "12/12/2000",
         "email":"lauracontreras@gmail.com",
         "contraseña":"LauraContreras123",
         "categoria": "admin",
-        "imagen":"woman.png",
-        "edad": 29
+        "imagen":"woman.png"
     }
 ]

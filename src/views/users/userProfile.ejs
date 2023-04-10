@@ -1,0 +1,53 @@
+
+<%- include('../partials/head.ejs', {cssSheet: 'register'}) %>
+
+<%- include('../partials/header.ejs') %>
+
+<!-- <section class="form-registro">
+    <h4>¡Regístrate, es gratis!</h4>
+    <input class="controls" type="text" name="nombre" id="nombre" placeholder="Nombre">
+    <input class="controls" type="text" name="apellido" id="apellido" placeholder="Apellido">
+    <input class="controls" type="email" name="Direccion de email" id="Direccion de email" placeholder="Direccion de email">
+    <input class="controls" type="password" name="Cear contraseña" id="Crear contraseña" placeholder="Crear contraseña">
+    <br>
+    <br>
+    <input class="boton" type="submit" value="Registrarse">
+    
+
+</section> -->
+
+<form action="action_page.php" method="post">
+  <h3>¡Regístrate, es gratis!</h3>
+  <div class="container">
+    <label for="nombre"><b>Nombre</b></label>
+    <input type="text" placeholder="Nombre/Nombres" name="nombre" required>
+
+    <label for="apellido"><b>Apellidos</b></label>
+    <input type="text" placeholder="Apellidos" name="apellido" required>
+
+    <label for="fechaNacimiento"><b>Fecha de Nacimiento</b></label>
+    <input type="date" name="fechaNacimiento" required>
+
+    <label for="email"><b>Email</b></label>
+    <input type="email" placeholder="abcd@mail.com" name="email" required>
+
+    <label for="contraseña"><b>Contraseña</b></label>
+    <input type="password" placeholder="Contraseña" name="contraseña" required>
+
+    <label for="categoria"><b>Categoria</b></label>
+    <input type="text" placeholder="Administrador/Usuario" name="Categoria" required>
+
+    <label for="userImage"><i class="fa fa-file-import"></i> Subir Imagen</label>
+    <input type="file" name="userImage" value="Agregar Imagen" >
+
+    <button type="submit">Registrarse</button>
+    <!-- <label>
+      <input type="checkbox" checked="checked" name="remember"> Recordar
+    </label> -->
+  </div>
+</form>
+
+  <%- include('../partials/footer.ejs') %>
+
+</body>
+</html>
