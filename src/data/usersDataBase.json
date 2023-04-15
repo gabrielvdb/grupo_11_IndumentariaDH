@@ -1,42 +1,52 @@
 [
-    {
-        "id": 1,
-        "nombre": "Nicolas",
-        "apellido": "Camargo",
-        "Fecha de Nacimiento": "10/08/1995",
-        "email":"nicolascamargo@gmail.com",
-        "contraseña":"NicolasCamargo123",
-        "categoria": "admin",
-        "imagen":"user.png"
-    },
-    {
-        "id": 1,
-        "nombre": "Luz",
-        "apellido": "Castro",
-        "Fecha de Nacimiento": "11/07/1992",
-        "email":"luzcastro@gmail.com",
-        "contraseña":"LuzCastro123",
-        "categoria": "admin",
-        "imagen":"woman.png"
-    },
-    {
-        "id": 1,
-        "nombre": "Gerardo",
-        "apellido": "Vallejo",
-        "Fecha de Nacimiento": "10/02/1985",
-        "email":"gerardovallejo@gmail.com",
-        "contraseña":"GerardoVallejo123",
-        "categoria": "admin",
-        "imagen":"man.png"
-    },
-    {
-        "id": 1,
-        "nombre": "Laura",
-        "apellido": "Contreras",
-        "Fecha de Nacimiento": "12/12/2000",
-        "email":"lauracontreras@gmail.com",
-        "contraseña":"LauraContreras123",
-        "categoria": "admin",
-        "imagen":"woman.png"
-    }
+ {
+  "id": 1,
+  "nombre": "Nicolas",
+  "apellido": "Camargo",
+  "Fecha de Nacimiento": "10/08/1995",
+  "email": "nicolascamargo@gmail.com",
+  "contraseña": "NicolasCamargo123",
+  "categoria": "admin",
+  "imagen": "user.png"
+ },
+ {
+  "id": 2,
+  "nombre": "Luz",
+  "apellido": "Castro",
+  "Fecha de Nacimiento": "11/07/1992",
+  "email": "luzcastro@gmail.com",
+  "contraseña": "LuzCastro123",
+  "categoria": "admin",
+  "imagen": "woman.png"
+ },
+ {
+  "id": 3,
+  "nombre": "Gerardo",
+  "apellido": "Vallejo",
+  "Fecha de Nacimiento": "10/02/1985",
+  "email": "gerardovallejo@gmail.com",
+  "contraseña": "GerardoVallejo123",
+  "categoria": "admin",
+  "imagen": "man.png"
+ },
+ {
+  "id": 4,
+  "nombre": "Laura",
+  "apellido": "Contreras",
+  "Fecha de Nacimiento": "12/12/2000",
+  "email": "lauracontreras@gmail.com",
+  "contraseña": "LauraContreras123",
+  "categoria": "admin",
+  "imagen": "woman.png"
+ },
+ {
+  "id": 5,
+  "nombre": "Santiago",
+  "apellido": "Correa",
+  "fechaNacimiento": "1999-04-21",
+  "email": "santiagocorrea@gmail.com",
+  "contrasena": "$2a$10$Yfai5Zow.8AlesiBAG/.0Ozl/ntMpQwfOqPpH6N.GYovy.pVBmEMq",
+  "categoria": "Administrador",
+  "userImage": "userImage-1681525745479.png"
+ }
 ]

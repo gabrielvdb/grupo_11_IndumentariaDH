@@ -1,6 +1,8 @@
 const express = require("express");
+const session = require("express-session");
 const app = express();
 const methodOverride = require('method-override');
+const cookies = require('cookie-parser');
 
 const path = require("path");
 
@@ -8,7 +10,18 @@ const homeRouter = require("./src/routes/homeRouter.js");
 const productRouter = require("./src/routes/productRouter.js");
 const userRouter = require("./src/routes/userRouter.js");
 
+const userLoggedMiddleware = require('./src/middlewares/userLoggedMiddleware');
 
+
+app.use(session({
+    secret: "Es un secreto, si tu mirada y la mia♫",
+    resave: false,
+    saveUninitialized: false,
+}));
+
+app.use(cookies());
+
+app.use(userLoggedMiddleware);
 app.set('views', path.resolve(__dirname,'./src/views'));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());

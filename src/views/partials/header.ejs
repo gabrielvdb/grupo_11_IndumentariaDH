@@ -7,9 +7,28 @@
     <a href="/products/" class="nav-link">Ropa</a>
     <a href="/products/" class="nav-link">Calzado</a>
     <a href="/products/" class="nav-link">Accesorios</a>
-    <a href="/users/login" target="blank">Login</a>
-    <a href="/users/register" target="blank">Register</a>
     <a href="#contact">Contact</a>
     <a class="active" href="/products/productCart" target="blank"><i class="fa fa-shopping-cart"></i></a>
+  <% if (locals.isLogged) { %>  
+    
+    <div class="dropdown">
+      <!-- <a class="nav-link dropdown-toggle" href="#" id="dropUser" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <img src="/images/users/<%= locals.userLogged.userImage %>" width="20" style="border-radius: 100%;">
+        Hi <%= locals.userLogged.nombre %> 
+      </a> -->
+      <button class="dropbtn">
+        <i class="fa fa-user"></i>
+        Hola <%= locals.userLogged.nombre %>
+      </button>
+      <div class="dropdown-content">
+        <a class="contentList" href="/users/userProfile">Mi perfil</a>
+        <a class="contentList" href="/users/logout">Logout</a>
+      </div>
+    </div>
+  <% } else { %>
+    <a href="/users/register" target="blank">Register</a>
+    <a href="/users/login" target="blank">Login</a>
+  <% } %>
   </nav>
 </header>
+

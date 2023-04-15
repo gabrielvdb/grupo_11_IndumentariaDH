@@ -12,14 +12,44 @@
     <input class="boton" type="submit" value="Ingresar">
 </section> -->
 
-<form action="action_page.php" method="post">
+<form action="/users/login" method="post">
     <h3>¡Bienvenid@!</h3>
     <div class="container">
+      <label for="email"><b>Email</b></label>
+      <input 
+        type="email" 
+        placeholder="abcd@mail.com" 
+        name="email"
+        value= "<%= locals.oldData ? oldData.email : null %>"
+      >
+      <% if (locals.errors && errors.email) { %>
+        <div class="text-danger">
+          <%= errors.email.msg  %>
+        </div>
+      <% } %>
+  
+      <label for="contrasena"><b>Contraseña</b></label>
+      <input 
+        type="password" 
+        placeholder="Contraseña" 
+        name="contrasena"
+      >
+      <% if (locals.errors && errors.contrasena) { %>
+        <div class="text-danger">
+          <%= errors.contrasena.msg  %>
+        </div>
+      <% } %>    
+
+
+
+
+<!-- 
+
       <label for="nombreUsuario"><b>Nombre de Usuari@</b></label>
       <input type="text" placeholder="Nombre de Usuario" name="uname" required>
   
       <label for="contraseña"><b>Contraseña</b></label>
-    <input type="password" placeholder="Contraseña" name="contraseña" required>
+    <input type="password" placeholder="Contraseña" name="contraseña" required> -->
   
       <button type="submit">Ingresar</button>
       <label>
