@@ -46,5 +46,43 @@ Cada equipo habla como máximo tres minutos de tres temas puntuales:
 
 - Comenzar a desarrollar el Sprint 5
 
+**Segundo weekly - Domingo 16 de Abril**
+
+<b> Qué hizo la semana pasada. </b>
+
+- Se agrego la estructura de archivos y directorios de usuarios. 
+- Se arreglo la vista de Login. 
+- Se realizó la retrospectiva, el weekly y la actualización del tablero de Trello
+- Se habilitó la opción de subir imagenes con Multer. 
+- Se agregaron las validaciones correspondientes para los diferentes campos del formulario de registro.
+
+<b> Si se encontró con algún impedimento. </b>
+
+- Usar Multer para poder subir varias imagenes 
+- Conservar la información del formulario de registro
+- De acuerdo a la validación mostrar el error correspondiente 
+
+<b> Qué va a hacer esta semana. </b>
+
+- Continuar con las validaciones de login y registro de usuarios
+
+**Segundo weekly - Domingo 23 de Abril**
+
+<b> Qué hizo la semana pasada. </b>
+
+- Se ajustaron las vistas de register y login para que sean Responsive.
+- Se implemento la identidad de usuarios.
+- Se implemento el registro de usuarios.
+- Se implemento el login de usuarios y la función de recordar.
+
+<b> Si se encontró con algún impedimento. </b>
+
+- De acuerdo a la selección de recordar usuario cambiar el contenido que puede ver la persona.
+- Cambiar las rutas de acuerdo a un usuario registrado y logeado
+- Validaciones a través de middlewares
+
+<b> Qué va a hacer esta semana. </b>
+
+- Comenzar a desarrollar el Sprint 6
 
 

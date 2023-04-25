@@ -123,9 +123,9 @@ box-shadow: 0 0 10px #121212, 0 0 40px #121212, 0 0 80px #121212;
         padding: 0 1rem;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        /* justify-content: space-between; */
         flex-wrap: wrap;
-        min-height: 100vh;
+        min-height: 40vh;
     }
     .product-right, .product-left{
         width: 50%;
@@ -196,7 +196,7 @@ box-shadow: 0 0 10px #121212, 0 0 40px #121212, 0 0 80px #121212;
 /* Carrusel de productos */
 
 .main-wrapper{
-    min-height: 100vh;
+    min-height: 70vh;
     padding: 3rem 1rem;
     display: -ms-flexbox; 
     display: flex;

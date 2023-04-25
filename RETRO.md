@@ -83,3 +83,29 @@ Desaparecerse o aparecer esporádicamente para realizar el proyecto.
 5. Dejar de hacer
 No entregar el sprint en el tiempo establecido
 No realizar ningún commit durante el tiempo del sprint
+
+SPRINT 5
+
+**La retrospectiva**
+
+1. Comenzar a hacer.
+
+Establecer la hoja de ruta para optimizar el tiempo
+Identificar los pasos centrales y ejecutarlos de forma organizada
+
+2. Hacer más.
+
+Descomponer las tareas en secciones más pequeñas y designar a un responsable para cada una.
+Establecer plazos claros para las entregas y ajustar los tiempos de cada persona para asegurarse de que se cumplan los plazos acordados.
+
+3. Continuar haciendo.
+Maximizar la eficiencia del grupo de WhatsApp al utilizarlo como una herramienta efectiva para la comunicación y organización.
+Proporcionar asistencia a los compañeros en caso de dificultades o preguntas que puedan surgir.
+Cumplir con los plazos establecidos entregando las tareas asignadas en cada Sprint.
+
+4. Hacer menos.
+Evitar desaparecerse o presentarse de manera esporádica durante el proyecto.
+
+5. Dejar de hacer
+Asegurarse de cumplir con el plazo establecido para la entrega del Sprint.
+Realizar commits regularmente durante el transcurso del Sprint y asegurarse de no tener ningún tipo de actividad en el repositorio.

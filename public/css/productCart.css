@@ -31,8 +31,8 @@ body{
 .row {
     display: -ms-flexbox; /* IE10 */
     display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
-    flex-wrap: wrap;
+    /* -ms-flex-wrap: wrap; */
+    /* flex-wrap: wrap; */
     margin: 2px;
   }
 
@@ -73,6 +73,7 @@ body{
   .col-50,
   .col-75 {
     padding: 0 16px;
+    margin-bottom: 10px;
   }
   
   .container {
@@ -91,10 +92,21 @@ body{
     border: 1px solid #ccc;
     border-radius: 3px;
   }
+
+  input[type=file] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+  }
   
   label {
     margin-bottom: 10px;
     display: block;
+    /* max-width: 100%; */
+  }
+
+  textarea{
+    max-width: 100%;
   }
   
   .icon-container {
