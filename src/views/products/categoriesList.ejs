@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('../partials/head.ejs', {cssSheet: 'productList'}) %>
+<%- include('../partials/header.ejs') %>
+
+<body>
+    <main class = "main-wrapper">
+        <div class = "tituloProductos">
+            <div class = "title">
+                <h1>Nuestras Categorias</h1>
+            </div>
+ 
+        <section id="listadoProductos">
+            
+                <% for( let i = 0; i < categories.length; i++ ) { %>
+                    <article class="contenedorProducto"> 
+                        <a href="/categories/detail/<%= categories[i].id %>"><%= categories[i].category %></a>
+                        <div class="infoProducto">
+                            <div>
+                                <span class="nombreProducto"><%= categories[i].category %></span>                                
+                            </div>
+                            <a href = "#"><i class = "product-btn">Agregar al Carrito</i></a>
+                        </div>
+                    </article>
+                <% } %>
+        
+        </section>
+
+    </main>
+
+    <%- include('../partials/footer.ejs') %>
+
+</body>
+</html>
