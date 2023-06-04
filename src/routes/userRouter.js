@@ -40,5 +40,4 @@ router.get("/userProfile/", authMiddleware, userController.profile);
 // Logout
 router.get("/logout/", userController.logout);
 
-
 module.exports = router;
