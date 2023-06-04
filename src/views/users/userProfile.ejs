@@ -25,10 +25,10 @@
 		<div class="card">
 		<img src="/images/users/<%= user.userImage %> " alt="usuario" style="width:100%">
 		<!-- <img src="img.jpg" alt="John" style="width:100%"> -->
-		<h2>Bienvenid@ <%= user.nombre %> </h2>
+		<h2>Bienvenid@ <%= user.userName %> <%= user.userLastName %></h2>
 		<!-- <h1>John Doe</h1> -->
 		<p class="title"><%= user.email %></p>
-		<p><%= user.fechaNacimiento %></p>
+		<p><%= user.dateOfBirth %></p>
 		<p><button>
 			<a class = "active" href="/products/productCart" target="blank"><i class="fa fa-shopping-cart"></i></a>
 		</button></p>

@@ -21,7 +21,8 @@ router.get("/login", guestMiddleware ,userController.login);
 
 /* Proceso de Login */
 /* router.post("/login", validations, userController.processLogin); */
-router.post("/login", guestMiddleware, userController.processLogin);
+/* router.post("/login", guestMiddleware, userController.processLogin); */
+router.post("/login", userController.processLogin);
 
 /* Formulario de Registro */
 router.get("/register", guestMiddleware, userController.register);
