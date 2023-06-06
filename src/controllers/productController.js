@@ -1,12 +1,24 @@
 const fs = require('fs'); 
 const path = require("path"); 
+const db = require("../database/models"); /* Tengo que quitarla despues */
 
 const rutaProductosJson = path.join(__dirname, '../data/productsDataBase.json');
 
 const productController = {
     productList: (req, res) => {
         const listaProductos = JSON.parse(fs.readFileSync(rutaProductosJson, "utf-8"));
-        res.render("products/productList", {listaProductos:listaProductos });
+        res.render("products/productList", {listaProductos:listaProductos});
+    },
+
+    productList1: (req, res) => {
+        db.Products.findAll()
+        .then(products => {
+            /* res.render("products/productList1", {products:products}) */
+            res.send(products)
+        })
+        .catch(error => {
+            res.send(error)
+        })
     },
 
     detailProduct: (req, res) => {

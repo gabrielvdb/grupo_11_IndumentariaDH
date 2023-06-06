@@ -89,6 +89,7 @@ img{
     padding: 5px;
     background: var(--verde);
     margin: 10px;
+    text-decoration: none;
 }
 
 

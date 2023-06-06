@@ -3,20 +3,7 @@
 
 <%- include('../partials/header.ejs') %>
 
-<!-- <section class="form-registro">
-    <h4>¡Regístrate, es gratis!</h4>
-    <input class="controls" type="text" name="nombre" id="nombre" placeholder="Nombre">
-    <input class="controls" type="text" name="apellido" id="apellido" placeholder="Apellido">
-    <input class="controls" type="email" name="Direccion de email" id="Direccion de email" placeholder="Direccion de email">
-    <input class="controls" type="password" name="Cear contraseña" id="Crear contraseña" placeholder="Crear contraseña">
-    <br>
-    <br>
-    <input class="boton" type="submit" value="Registrarse">
-    
-
-</section> -->
-
-<form action="/users/register" method="post" enctype="multipart/form-data" id="userRegisterForm">
+<form action="/users/register" method="post" enctype="multipart/form-data">
   <h3>¡Regístrate, es gratis!</h3>
   <div class="container">
     <label for="nombre"><b>Nombre</b></label>
@@ -25,16 +12,11 @@
       type="text" 
       placeholder="Nombre/Nombres" 
       name="nombre"
-      value= "<%= locals.oldData ? oldData.nombre : null %>"
+      value="<%= locals.oldData ? locals.oldData.nombre : '' %>"
     >
-    <div class="errors">
-      <ul>
-        
-      </ul>
-    </div>
-    <% if (locals.errors && errors.nombre) { %>
+    <% if (locals && locals.errors && locals.errors.nombre) { %>
       <div class="text-danger">
-        <%= errors.nombre.msg  %>
+        <%= locals.errors.nombre.msg  %>
       </div>
     <% } %>
     
@@ -48,9 +30,9 @@
       name="apellido"
       value= "<%= locals.oldData ? oldData.apellido : null %>"
     >
-    <% if (locals.errors && errors.apellido) { %>
+    <% if (locals && locals.errors && locals.errors.apellido) { %>
       <div class="text-danger">
-        <%= errors.apellido.msg  %>
+        <%= locals.errors.apellido.msg  %>
       </div>
     <% } %>
 
@@ -100,7 +82,7 @@
     <label for="categoria"><b>Categoria</b></label>
     <input 
       type="text" 
-      placeholder="Administrador/Usuario" 
+      placeholder="Administrador/Invitado" 
       name="categoria"
       value= "<%= locals.oldData ? oldData.categoria : null %>"
     >

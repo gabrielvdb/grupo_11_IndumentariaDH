@@ -1,16 +1,6 @@
-
 <%- include('../partials/head.ejs', {cssSheet: 'login'}) %>
 
 <%- include('../partials/header.ejs') %>
-
-<!-- <section class="form-registro">
-    <h4>¡Bienvenido!</h4>
-    <input class="controls" type="text" name="nombre" id="nombre" placeholder="Nombre de usuario">
-    <input class="controls" type="text" name="apellido" id="apellido" placeholder="Contraseña">
-    <br>
-    <br>
-    <input class="boton" type="submit" value="Ingresar">
-</section> -->
 
 <form action="/users/login" method="post">
     <h3>¡Bienvenid@!</h3>
@@ -22,9 +12,9 @@
         name="email"
         value= "<%= locals.oldData ? oldData.email : null %>"
       >
-      <% if (locals.errors && errors.email) { %>
+      <% if (locals.errors && locals.errors.email) { %>
         <div class="text-danger">
-          <%= errors.email.msg  %>
+          <%= locals.errors.email.msg %>
         </div>
       <% } %>
   
@@ -34,23 +24,12 @@
         placeholder="Contraseña" 
         name="contrasena"
       >
-      <% if (locals.errors && errors.contrasena) { %>
+      <% if (locals.errors && locals.errors.contrasena) { %>
         <div class="text-danger">
-          <%= errors.contrasena.msg  %>
+          <%= locals.errors.contrasena.msg %>
         </div>
-      <% } %>    
+      <% } %>
 
-
-
-
-<!-- 
-
-      <label for="nombreUsuario"><b>Nombre de Usuari@</b></label>
-      <input type="text" placeholder="Nombre de Usuario" name="uname" required>
-  
-      <label for="contraseña"><b>Contraseña</b></label>
-    <input type="password" placeholder="Contraseña" name="contraseña" required> -->
-  
       <button type="submit">Ingresar</button>
       <label>
         <input type="checkbox" checked="checked" name="remember"> Recordar

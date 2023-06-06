@@ -9,76 +9,40 @@
           <div class = "product-imgs">
             <div class = "img-display">
               <div class = "img-showcase">
-                <img id="imagenProducto" src="/images/products/<%= prenda.img1 %>" alt="Buzo Wilson">
-                <!-- <img src="/images/products/<%= prenda.img1 %>" alt = "buzo1">
-                <img src="/images/products/<%= prenda.img2 %>" alt = "buzo2">
-                <img src="/images/products/<%= prenda.img3 %>" alt = "buzo3">
-                <img src="/images/products/<%= prenda.img4 %>" alt = "buzo4"> -->
+                <img id="imagenProducto" src="/images/products/<%= product.productImage %>" alt="Buzo Wilson">
               </div>
             </div>
-            <!-- <div class = "img-select">
-              <div class = "img-item">
-                <a href = "#" data-id = "1">
-                  <img src="/images/products/<%= prenda.img1 %>" alt = "buzo1">
-                </a>
-              </div>
-              <div class = "img-item">
-                <a href = "#" data-id = "2">
-                  <img src="/images/products/<%= prenda.img2 %>" alt = "buzo2">
-                </a>
-              </div>
-              <div class = "img-item">
-                <a href = "#" data-id = "3">
-                  <img src="/images/products/<%= prenda.img3 %>" alt = "buzo3">
-                </a>
-              </div>
-              <div class = "img-item">
-                <a href = "#" data-id = "4">
-                  <img src="/images/products/<%= prenda.img4 %>" alt = "buzo4">
-                </a>
-              </div>
-            </div> -->
+           
           </div>
           <!-- card right -->
           <div class = "product-content">
-            <a class="addeditdelete" href="/../products/editProduct/<%= prenda.id %>" target="blank"><i class="fa fa-recycle"></i></a>
-            <a class="addeditdelete" href="/products/addProduct" target="blank"><i class="fa fa-plus"></i></a>  
-            <form action="/products/delete/<%= prenda.id %>?_method=DELETE" method="POST" style="display: inline-flex">
-							<button type="submit" class="deletebutton">ELIMINAR</button>
-						</form>     
+          <a class="addeditdelete" href="/../prueba/edit/<%= product.id %>" target="blank"><i class="fa fa-recycle"></i></a>
+         <!--  <a class="addeditdelete" href="/../prueba/create/" target="blank"><i class="fa fa-plus"></i></a> -->  
+          <a class="deletebutton" href="/prueba/delete/<%= product.id %>" target="blank">ELIMINAR</a>
             
-            <h2 class = "product-title"><%= prenda.nombre %></h2>
-            <a href = "/products/" class = "product-link"><%= prenda.categoria %></a>
+            <h2 class = "product-title"><%= product.product %></h2>
+            <a href = "/products/" class = "product-link"><%= product.category.category %></a>
             <div class = "product-rating">
               <i class = "fas fa-star"></i>
               <i class = "fas fa-star"></i>
               <i class = "fas fa-star"></i>
               <i class = "fas fa-star"></i>
               <i class = "fas fa-star-half-alt"></i>
-              <span><%= prenda.rate %></span>
+              <span><%= product.rate %></span>
             </div>
   
             <div class = "product-price">
-              <p class = "last-price">Antes: <span><%= prenda.precioAntes %></span></p>
-              <p class = "new-price">Ahora: <span><%= prenda.precioAhora %> (<%= prenda.discount %>%) </span></p>
+              <p class = "last-price">Antes: <span><%= product.beforePrice %></span></p>
+              <p class = "new-price">Ahora: <span><%= product.afterPrice %> (<%= product.discount %>%) </span></p>
             </div>
   
             <div class = "product-detail">
               <h2>Descripción del producto </h2>
-              <p><%= prenda.descripcion %></p>
+              <p><%= product.description %></p>
               <ul>
-                <li>Categoria: <span><%= prenda.categoria %></span></li>
-                <li>Color: <span><%= prenda.color %></span></li>
-                <li>Talles
-                    <div class="talles">
-                        <select>
-                            <option value="S">S</option>
-                            <option value="M">M</option>
-                            <option value="L">L</option>
-                            <option value="XL">XL</option>
-                        </select>
-                    </div>
-                </li>
+                <li>Categoria: <span><%= product.category.category %></span></li>
+                <li>Color: <span><%= product.color.color %></span></li>
+                <li>Talle: <span><%= product.size %></span></li>
               </ul>
             </div>
   
@@ -111,7 +75,7 @@
           <section class="contenedorProductosRelacionados">
               
               <article class="contenedorProducto">
-                  <a href="../../products/detailProduct/2"><img class="imagenProducto" src="/images/products/MaletaparaEntrenamiento1.jpg" alt="buzo 2"></a>
+                  <a href="../../prueba/pruebaDetailProduct/2"><img class="imagenProducto" src="/images/products/MaletaparaEntrenamiento1.jpg" alt="buzo 2"></a>
                   <div class="infoProducto">
                     <div>
                         <span class="nombreProducto">Maleta para Entrenamiento</span>
@@ -124,7 +88,7 @@
               </article>
 
               <article class="contenedorProducto">
-                  <a href="../../products/detailProduct/7"><img class="imagenProducto" src="/images/products/DHAirForce1.jpg" alt="Colgante Arbol de la Vida"></a>
+                  <a href="../../prueba/pruebaDetailProduct/7"><img class="imagenProducto" src="/images/products/DHAirForce1.jpg" alt="Nike Air Force"></a>
                   <div class="infoProducto">
                     <div>
                         <span class="nombreProducto">DH Air Force</span>
@@ -137,7 +101,7 @@
               </article>
 
               <article class="contenedorProducto">
-                  <a href="../../products/detailProduct/6"><img class="imagenProducto" src="/images/products/SudaderaRunningDH1.png" alt="Anillos Dorados"></a>
+                  <a href="../../prueba/pruebaDetailProduct/6"><img class="imagenProducto" src="/images/products/SudaderaRunningDH1.png" alt="Sudadera Running Nike"></a>
                   <div class="infoProducto">
                     <div>
                         <span class="nombreProducto">Sudadera Running DH</span>
