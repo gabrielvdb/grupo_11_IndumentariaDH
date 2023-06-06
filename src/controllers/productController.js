@@ -130,7 +130,8 @@ const productController = {
 		fs.writeFileSync(productsFilePath, productsJSON);
 
 		res.redirect("/products");
-	}
+	},
+    
 }
 
 module.exports = productController;
