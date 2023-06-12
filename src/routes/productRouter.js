@@ -41,7 +41,4 @@ router.delete("/delete/:id", productController.deleteProduct);
 /* Carrito de Compras */
 router.get("/productCart", productController.productCart);
 
-/* PRUEBA 1 VINCULACIÓN BASE DE DATOS */
-router.get("/prueba", productController.productList1);
-
 module.exports = router;

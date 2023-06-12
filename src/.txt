@@ -1,3 +1,69 @@
+document.addEventListener("DOMContentLoaded", function () {
+    const categorySelect = document.querySelector("select[name='category']");
+    const nuevaCategoriaContainer = document.getElementById("nuevaCategoriaContainer");
+    const colorSelect = document.querySelector("select[name='color']");
+    const nuevoColorContainer = document.getElementById("nuevoColorContainer");
+    const precioAntesInput = document.getElementById("precioAntes");
+    const discountInput = document.getElementById("discount");
+    const precioAhoraInput = document.getElementById("precioAhora");
+    
+    precioAntesInput.addEventListener("input", function () {
+      calcularPrecioAhora();
+    });
+
+    discountInput.addEventListener("input", function () {
+      calcularPrecioAhora();
+    });
+
+    function calcularPrecioAhora() {
+      const precioAntes = parseFloat(precioAntesInput.value);
+      const discount = parseFloat(discountInput.value);
+      const precioAhora = precioAntes - (precioAntes * (discount / 100));
+
+      if (!isNaN(precioAhora)) {
+        precioAhoraInput.value = precioAhora.toFixed(2);
+      }
+    }
+
+    categorySelect.addEventListener("change", function () {
+      if (categorySelect.value === "nueva") {
+        nuevaCategoriaContainer.style.display = "block";
+      } else {
+        nuevaCategoriaContainer.style.display = "none";
+      }
+    });
+
+    colorSelect.addEventListener("change", function () {
+      if (colorSelect.value === "nuevo") {
+        nuevoColorContainer.style.display = "block";
+      } else {
+        nuevoColorContainer.style.display = "none";
+      }
+    });
+
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 >> EJS ANTIGUO LISTA DE PRODUCTOS <<
 
 <%- include('../partials/head.ejs', {cssSheet: 'productList'}) %>
@@ -1192,3 +1258,118 @@ const userController = {
 };
 
 module.exports = userController;
+
+
+>>>>>>>>>>>>>>> formulario de Registro EJS <<<<<<<<<<<<<<<<<<
+
+<%- include('../partials/head.ejs', {cssSheet: 'register'}) %>
+
+<%- include('../partials/header.ejs') %>
+
+<script src="/js/registerUser.js"></script>
+
+<form id="formulario" action="/users/register" method="post" enctype="multipart/form-data">
+  <h3>¡Regístrate, es gratis!</h3>
+  <div class="container">
+    <label for="nombre"><b>Nombre</b></label>
+    <input
+      id="firstname" 
+      type="text" 
+      placeholder="Nombre/Nombres" 
+      name="nombre"
+      value="<%= locals.oldData ? locals.oldData.nombre : '' %>"
+    >
+    <% if (locals && locals.errors && locals.errors.nombre) { %>
+      <div class="text-danger">
+        <%= locals.errors.nombre.msg  %>
+      </div>
+    <% } %>
+    
+
+    <label for="apellido"><b>Apellidos</b></label>
+    <input 
+      id="lastname" 
+      type="text" 
+      placeholder="Apellidos" 
+      name="apellido"
+      value= "<%= locals.oldData ? oldData.apellido : null %>"
+    >
+    <% if (locals && locals.errors && locals.errors.apellido) { %>
+      <div id="lastnameError" class="text-danger">
+        <%= locals.errors.apellido.msg  %>
+      </div>
+    <% } %>
+
+    <label for="fechaNacimiento"><b>Fecha de Nacimiento</b></label>
+    <input 
+      type="date" 
+      name="fechaNacimiento"
+      value= "<%= locals.oldData ? oldData.fechaNacimiento : null %>"
+    >
+    <% if (locals.errors && errors.fechaNacimiento) { %>
+      <div class="text-danger">
+        <%= errors.fechaNacimiento.msg  %>
+      </div>
+    <% } %>
+
+    <label for="email"><b>Email</b></label>
+    <input 
+      id="mail"
+      type="email" 
+      placeholder="abcd@mail.com" 
+      name="email"
+      value= "<%= locals.oldData ? oldData.email : null %>"
+    >
+    <% if (locals.errors && errors.email) { %>
+      <div id="emailError" class="text-danger">
+        <%= errors.email.msg  %>
+      </div>
+    <% } %>
+
+    <label for="contrasena"><b>Contraseña</b></label>
+    <input
+      id="pass"
+      type="password" 
+      placeholder="Contraseña" 
+      name="contrasena"
+    >
+    <% if (locals.errors && errors.contrasena) { %>
+      <div id="passError" class="text-danger">
+        <%= errors.contrasena.msg  %>
+      </div>
+    <% } %>
+
+    <label for="categoria"><b>Categoria</b></label>
+    <input 
+      type="text" 
+      placeholder="Administrador/Invitado" 
+      name="categoria"
+      value= "<%= locals.oldData ? oldData.categoria : null %>"
+    >
+    <% if (locals.errors && errors.categoria) { %>
+      <div class="text-danger">
+        <%= errors.categoria.msg  %>
+      </div>
+    <% } %>
+
+    <label for="userImage"><i class="fa fa-file-import"></i> Subir Imagen</label>
+    <input type="file" name="userImage" value="Agregar Imagen" >
+
+    <% if (locals.errors && errors.userImage) { %>
+      <div class="text-danger">
+        <%= errors.userImage.msg  %>
+      </div>
+    <% } %>
+
+    <button type="submit">Registrarse</button>
+    <!-- <label>
+      <input type="checkbox" checked="checked" name="remember"> Recordar
+    </label> -->
+  </div>
+</form>
+
+  <%- include('../partials/footer.ejs') %>
+
+</body>
+</html>
+

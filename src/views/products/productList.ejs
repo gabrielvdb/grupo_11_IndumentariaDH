@@ -1,3 +1,5 @@
+<!-- Lista de productos con JSON -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,7 +18,7 @@
             
             <% locals.listaProductos.forEach(prenda => { %>
                 <article class="contenedorProducto"> 
-                    <a href="/products/detailProduct/<%= prenda.id %>"><img class="imagenProducto" src="/images/products/<%= prenda.img1 %>" alt="Imagen Producto"></a>
+                    <a href="/product/detailProduct/<%= prenda.id %>"><img class="imagenProducto" src="/images/products/<%= prenda.img1 %>" alt="Imagen Producto"></a>
                     <!-- <img class="rear-img" src="../images/buzo2.jpg" alt="rear product image"> -->
                     <div class="infoProducto">
                         <div>

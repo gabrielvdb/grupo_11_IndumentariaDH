@@ -30,19 +30,16 @@
   "img4": "MaletaparaEntrenamiento4.jpg"
  },
  {
-  "id": 3,
+  "id": "3",
   "nombre": "DH Pro Running",
-  "rate": 4.8,
+  "rate": "4.5",
   "precioAntes": 6000,
   "precioAhora": 3000,
   "discount": 50,
-  "descripcion": "La camiseta DH Pro Runnning está confeccionada con un tejido ligero y transpirable en las zonas donde se acumula más calor para mantener la frescura desde el calentamiento hasta el estiramiento.",
+  "descripcion": "  La camiseta DH Pro Runnning está confeccionada con un tejido ligero y transpirable en las zonas donde se acumula más calor para mantener la frescura desde el calentamiento hasta el estiramiento. ",
   "color": "Negro",
   "categoria": "Ropa",
-  "img1": "DHProRunning1.jpg",
-  "img2": "DHProRunning2.jpg",
-  "img3": "DHProRunning3.jpg",
-  "img4": "DHProRunning4.jpg"
+  "img1": "DHProRunning1.jpg"
  },
  {
   "id": 4,

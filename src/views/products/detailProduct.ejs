@@ -1,3 +1,5 @@
+<!-- Detalle del producto JSON -->
+
 <%- include('../partials/head.ejs', {cssSheet: 'detailProduct'}) %>
 
 <%- include('../partials/header.ejs') %>
@@ -41,14 +43,14 @@
           </div>
           <!-- card right -->
           <div class = "product-content">
-            <a class="addeditdelete" href="/../products/editProduct/<%= prenda.id %>" target="blank"><i class="fa fa-recycle"></i></a>
-            <a class="addeditdelete" href="/products/addProduct" target="blank"><i class="fa fa-plus"></i></a>  
-            <form action="/products/delete/<%= prenda.id %>?_method=DELETE" method="POST" style="display: inline-flex">
+            <a class="addeditdelete" href="/../product/editProduct/<%= prenda.id %>" target="blank"><i class="fa fa-recycle"></i></a>
+            <a class="addeditdelete" href="/product/addProduct" target="blank"><i class="fa fa-plus"></i></a>  
+            <form action="/product/delete/<%= prenda.id %>?_method=DELETE" method="POST" style="display: inline-flex">
 							<button type="submit" class="deletebutton">ELIMINAR</button>
 						</form>     
             
             <h2 class = "product-title"><%= prenda.nombre %></h2>
-            <a href = "/products/" class = "product-link"><%= prenda.categoria %></a>
+            <a href = "/product/" class = "product-link"><%= prenda.categoria %></a>
             <div class = "product-rating">
               <i class = "fas fa-star"></i>
               <i class = "fas fa-star"></i>
@@ -111,7 +113,7 @@
           <section class="contenedorProductosRelacionados">
               
               <article class="contenedorProducto">
-                  <a href="../../products/detailProduct/2"><img class="imagenProducto" src="/images/products/MaletaparaEntrenamiento1.jpg" alt="buzo 2"></a>
+                  <a href="../../product/detailProduct/2"><img class="imagenProducto" src="/images/products/MaletaparaEntrenamiento1.jpg" alt="buzo 2"></a>
                   <div class="infoProducto">
                     <div>
                         <span class="nombreProducto">Maleta para Entrenamiento</span>
@@ -124,7 +126,7 @@
               </article>
 
               <article class="contenedorProducto">
-                  <a href="../../products/detailProduct/7"><img class="imagenProducto" src="/images/products/DHAirForce1.jpg" alt="Colgante Arbol de la Vida"></a>
+                  <a href="../../product/detailProduct/7"><img class="imagenProducto" src="/images/products/DHAirForce1.jpg" alt="Colgante Arbol de la Vida"></a>
                   <div class="infoProducto">
                     <div>
                         <span class="nombreProducto">DH Air Force</span>
@@ -137,7 +139,7 @@
               </article>
 
               <article class="contenedorProducto">
-                  <a href="../../products/detailProduct/6"><img class="imagenProducto" src="/images/products/SudaderaRunningDH1.png" alt="Anillos Dorados"></a>
+                  <a href="../../product/detailProduct/6"><img class="imagenProducto" src="/images/products/SudaderaRunningDH1.png" alt="Anillos Dorados"></a>
                   <div class="infoProducto">
                     <div>
                         <span class="nombreProducto">Sudadera Running DH</span>

@@ -10,17 +10,6 @@ const productController = {
         res.render("products/productList", {listaProductos:listaProductos});
     },
 
-    productList1: (req, res) => {
-        db.Products.findAll()
-        .then(products => {
-            /* res.render("products/productList1", {products:products}) */
-            res.send(products)
-        })
-        .catch(error => {
-            res.send(error)
-        })
-    },
-
     detailProduct: (req, res) => {
         let prendaId = req.params.id;
         const listaProductos = JSON.parse(fs.readFileSync(rutaProductosJson, "utf-8"));
@@ -66,7 +55,7 @@ const productController = {
 
         fs.writeFileSync(rutaProductosJson, productosJSON);
 
-        res.redirect("/products");
+        res.redirect("/product");
     },
 
     editProduct: (req, res) => {
@@ -109,7 +98,7 @@ const productController = {
 
         fs.writeFileSync(rutaProductosJson, productosJSON);
 
-        res.redirect("/products");
+        res.redirect("/product");
     },
 
     deleteProduct: (req, res) => {
@@ -125,7 +114,7 @@ const productController = {
 
         fs.writeFileSync(rutaProductosJson, productosJSON);
 
-        res.redirect("/products");
+        res.redirect("/product");
     },
 
     destroy : (req, res) => {
@@ -141,7 +130,7 @@ const productController = {
 		/* Escribir en el archivo JSON en si */
 		fs.writeFileSync(productsFilePath, productsJSON);
 
-		res.redirect("/products");
+		res.redirect("/product");
 	}
 }
 

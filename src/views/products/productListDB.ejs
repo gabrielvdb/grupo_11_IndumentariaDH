@@ -1,3 +1,5 @@
+<!-- Lista de Productos DB -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,7 +17,7 @@
             
                 <% for( let i = 0; i < products.length; i++ ) { %>
                     <article class="contenedorProducto"> 
-                        <a href="/prueba/pruebaDetailProduct/<%= products[i].id %>"><img class="imagenProducto" src="/images/products/<%= products[i].productImage %>" alt="Imagen Producto"></a>
+                        <a href="/products/detailProductDB/<%= products[i].id %>"><img class="imagenProducto" src="/images/products/<%= products[i].productImage %>" alt="Imagen Producto"></a>
                         <div class="infoProducto">
                             <div>
                                 <span class="nombreProducto"><%= products[i].product %></span>
@@ -37,7 +39,7 @@
             <div class="container">
               <h2 class="destacado-titulo">¡Agrega un nuevo producto!</h2>
               <p class="destacado-descripcion">Descubre nuestra última colección y agrega un producto increíble a tu catálogo.</p>
-              <a href="/../prueba/create/" class="destacado-boton">Agregar Producto</a>
+              <a href="/../products/create/" class="destacado-boton">Agregar Producto</a>
             </div>
           </section>
         

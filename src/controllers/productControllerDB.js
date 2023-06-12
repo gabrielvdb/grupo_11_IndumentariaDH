@@ -1,7 +1,7 @@
 const db = require("../database/models");
 /* const Op = db.Sequelize.Op; */
 
-const pruebaController = {
+const productControllerDB = {
     getProductsByCategory: function (category) {
         return function (req, res) {
           db.Products.findAll({
@@ -9,7 +9,7 @@ const pruebaController = {
             where: { '$category.category$': category } // Filtra por el nombre de la categoría
           })
             .then(products => {
-              res.render('products/pruebaList', { products: products });
+              res.render('products/productListDB', { products: products });
             })
             .catch(error => {
               res.send(error);
@@ -23,7 +23,7 @@ const pruebaController = {
             ]
         })
         .then(products => {
-            res.render("products/pruebaList", {products:products})
+            res.render("products/productListDB", {products:products})
         })
         .catch(error => {
             res.send(error)
@@ -37,7 +37,7 @@ const pruebaController = {
             ]
         })
         .then(product => {
-            res.render("products/pruebaDetailProduct", {product}) 
+            res.render("products/detailProductDB", {product}) 
         })
         .catch(error => {
             res.send(error)
@@ -50,7 +50,7 @@ const pruebaController = {
         .then(categories => {
           db.Color.findAll()
             .then(colors => {
-              res.render("products/createProduct", { categories, colors });
+              res.render("products/createProductDB", { categories, colors });
             })
             .catch(error => {
               res.send(error);
@@ -67,6 +67,19 @@ const pruebaController = {
       const colorId = req.body.color;
       const nuevaCategoria = req.body.nuevaCategoria;
       const nuevoColor = req.body.nuevoColor;
+    
+      // Validar los datos de entrada
+    /* if (!req.body.nombre || req.body.nombre.length < 5) {
+      return res.send("El nombre es obligatorio y debe tener al menos 5 caracteres.");
+    }
+
+    if (!req.body.descripcion || req.body.descripcion.length < 20) {
+      return res.send("La descripción es obligatoria y debe tener al menos 20 caracteres.");
+    }
+
+    if (!req.file || !isValidImage(req.file)) {
+      return res.send("La imagen es obligatoria y debe ser un archivo válido (JPG, JPEG, PNG, GIF).");
+    } */
         
       // Verificar si se seleccionó una categoría existente
       if (categoryId !== "nueva") {
@@ -84,7 +97,7 @@ const pruebaController = {
           productImage: req.file ? req.file.filename : "default-product-image.png"
         })
           .then(products => {
-            res.redirect("/prueba");
+            res.redirect("/products");
           })
           .catch(error => {
             res.send(error);
@@ -111,7 +124,7 @@ const pruebaController = {
                 productImage: req.file ? req.file.filename : "default-product-image.png"
               })
                 .then(products => {
-                  res.redirect("/prueba");
+                  res.redirect("/products");
                 })
                 .catch(error => {
                   res.send(error);
@@ -136,7 +149,7 @@ const pruebaController = {
                     productImage: req.file ? req.file.filename : "default-product-image.png"
                   })
                     .then(products => {
-                      res.redirect("/prueba");
+                      res.redirect("/products");
                     })
                     .catch(error => {
                       res.send(error);
@@ -166,7 +179,7 @@ const pruebaController = {
               .then(categories => {
                 db.Color.findAll()
                   .then(colors => {
-                    res.render("products/productEdit", { Product, categories, colors });
+                    res.render("products/productEditDB", { Product, categories, colors });
                   })
                   .catch(error => {
                     res.send(error);
@@ -228,7 +241,7 @@ const pruebaController = {
                       // Guardar los cambios en la base de datos
                       product.save()
                         .then(() => {
-                          res.redirect("/prueba/pruebaDetailProduct/" + product.id);
+                          res.redirect("/products/detailProductDB/" + product.id);
                         })
                         .catch(error => {
                           res.send(error);
@@ -241,7 +254,7 @@ const pruebaController = {
                   // Guardar los cambios en la base de datos
                   product.save()
                     .then(() => {
-                      res.redirect("/prueba/pruebaDetailProduct/" + product.id);
+                      res.redirect("/products/detailProductDB/" + product.id);
                     })
                     .catch(error => {
                       res.send(error);
@@ -261,7 +274,7 @@ const pruebaController = {
                 // Guardar los cambios en la base de datos
                 product.save()
                   .then(() => {
-                    res.redirect("/prueba/pruebaDetailProduct/" + product.id);
+                    res.redirect("/products/detailProductDB/" + product.id);
                   })
                   .catch(error => {
                     res.send(error);
@@ -274,7 +287,7 @@ const pruebaController = {
             // Guardar los cambios en la base de datos
             product.save()
               .then(() => {
-                res.redirect("/prueba/pruebaDetailProduct/" + product.id);
+                res.redirect("/products/detailProductDB/" + product.id);
               })
               .catch(error => {
                 res.send(error);
@@ -289,7 +302,7 @@ const pruebaController = {
     delete: function (req, res) {
             db.Products.findByPk(req.params.id)
             .then(product => {
-                res.render("products/deleteProduct", {Product: product})
+                res.render("products/deleteProductDB", {Product: product})
             })
             .catch(error => {
                 res.send(error)
@@ -302,12 +315,15 @@ const pruebaController = {
                 }
             })
             .then(products => {
-                res.redirect("/prueba")
+                res.redirect("/products")
             })
             .catch(error => {
                 res.send(error)
             })
+        },
+    productCart: (req, res) => {
+      res.render("products/productCart");
         }
     }
 
-module.exports = pruebaController;
+module.exports = productControllerDB;

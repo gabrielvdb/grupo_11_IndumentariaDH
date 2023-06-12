@@ -41,7 +41,7 @@ const userController = {
         
       const role = await db.Role.findOne({
         where: {
-          role: categoria // Cambia esto según tu lógica para obtener el rol correcto
+          role: categoria 
         }
       });
   

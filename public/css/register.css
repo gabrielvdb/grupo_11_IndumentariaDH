@@ -79,6 +79,10 @@ h3{
     text-align: center;
 }
 
+ul{
+  list-style-position: inside;
+}
+
 form {
     border: 30px solid#f9f9f9;
     /* width: 600px; */
@@ -150,6 +154,24 @@ form {
   span.psw {
     float: right;
     padding-top: 16px;
+  }
+
+  .is-valid {
+    background-color: var(--verdeclaro);
+    border: 2px var(--verdeclaro);
+  } 
+
+  .is-invalid {
+      background-color: #F8D7DA;
+      border: 2px solid #842029;
+  }
+
+  .alert-warning{
+      color:#f44336;
+      /* background-color: #F8D7DA; */
+      text-align: center;
+      border-radius: 10px;
+      padding: 10px;
   }
   
   /* Change styles for span and cancel button on extra small screens */

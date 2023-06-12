@@ -2,11 +2,17 @@
 
 <%- include('../partials/header.ejs') %>
 
-<form action="/users/login" method="post">
+<script src="/js/loginUser.js"></script>
+
+
+<form class="form" action="/users/login" method="post">
     <h3>¡Bienvenid@!</h3>
+    <ul class="errores">
+    </ul>
     <div class="container">
       <label for="email"><b>Email</b></label>
-      <input 
+      <input
+        id="mail" 
         type="email" 
         placeholder="abcd@mail.com" 
         name="email"
@@ -20,6 +26,7 @@
   
       <label for="contrasena"><b>Contraseña</b></label>
       <input 
+        id="pass"  
         type="password" 
         placeholder="Contraseña" 
         name="contrasena"

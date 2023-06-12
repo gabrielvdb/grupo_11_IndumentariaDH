@@ -22,6 +22,10 @@ body{
 	background: #f9f9f9;
 }
 
+ul{
+  list-style-position: inside;
+}
+
 /* FORMULARIO DE COMPRAS */
 
 .tittleSpace{
@@ -300,6 +304,24 @@ footer .website-logo{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+
+.is-valid {
+  background-color: var(--verdeclaro);
+  border: 2px var(--verdeclaro);
+} 
+
+.is-invalid {
+    background-color: #F8D7DA;
+    border: 2px solid #842029;
+}
+
+.alert-warning{
+    color:#f44336;
+    /* background-color: #F8D7DA; */
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
 }
   
 @media (max-width: 768px){

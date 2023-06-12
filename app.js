@@ -9,8 +9,8 @@ const path = require("path");
 const homeRouter = require("./src/routes/homeRouter.js");
 const productRouter = require("./src/routes/productRouter.js");
 const userRouter = require("./src/routes/userRouter.js");
-const pruebaRouter = require("./src/routes/pruebaRouter.js"); /* Este despues toca eliminarlo */
-const categoryRouter = require("./src/routes/categoryRouter.js"); /* Este despues toca eliminarlo */
+const productRouterDB = require("./src/routes/productRouterDB.js");
+const categoryRouter = require("./src/routes/categoryRouter.js"); 
 
 const userLoggedMiddleware = require('./src/middlewares/userLoggedMiddleware');
 
@@ -32,10 +32,10 @@ app.use(methodOverride('_method'));
 
 app.use(express.static(path.resolve(__dirname,"./public")));
 app.use("/", homeRouter);
-app.use("/products", productRouter);
+app.use("/product", productRouter);
 app.use("/users", userRouter);
-app.use("/prueba", pruebaRouter); /* Este despues toca eliminarlo */
-app.use("/categories", categoryRouter); /* Este despues toca eliminarlo */
+app.use("/products", productRouterDB);
+app.use("/categories", categoryRouter); 
 
 
 const port = process.env.PORT || 3000;

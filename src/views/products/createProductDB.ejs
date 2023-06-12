@@ -1,33 +1,39 @@
+<!-- Creación de producto DB -->
+
 
 <%- include('../partials/head.ejs', {cssSheet: 'productCart'}) %>
 
 <%- include('../partials/header.ejs') %>
 
+<!-- <script src="/js/createProduct.js"></script> -->
+
 <body>
   <div class="tittleSpace">
     <h2>NUEVO PRODUCTO</h2>
+    <ul class="errores">
+    </ul>
     <div class="row">
         <div class="col-75">
             <div class="container">
-              <form action="/prueba/create" method="post" enctype="multipart/form-data">
+              <form class="form" action="/products/create" method="post" enctype="multipart/form-data">
                 <div class="row">
                   <div class="col-50">
                     <h3>Datos del producto</h3>
                     <label for="nombre"><i class="fa fa-tag"></i> Nombre del Producto</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Buso Deportivo DH" required>
+                    <input id="nombre" type="text"  name="nombre" placeholder="Buso Deportivo DH">
                     <label for="rate"><i class="fa fa-star"></i> Puntuación</label>
-                    <input type="text" id="rate" name="rate" placeholder="4.5" required>
+                    <input type="text" id="rate" name="rate" placeholder="4.5">
                     <label for="precioAntes"><i class="fa fa-money-bill"></i> Precio Antes</label>
-                    <input type="text" id="precioAntes" name="precioAntes" placeholder="20000" required>
+                    <input type="text" id="precioAntes" name="precioAntes" placeholder="20000">
                     <label for="discount"><i class="fa fa-percent"></i> Descuento</label>
-                    <input type="text" id="discount" name="discount" placeholder="50" required>
-                    <label for="precioAhora"><i class="fa fa-dollar-sign"></i> Precio Ahora</label required>
+                    <input type="text" id="discount" name="discount" placeholder="50">
+                    <label for="precioAhora"><i class="fa fa-dollar-sign"></i> Precio Ahora</label>
                     <input type="text" id="precioAhora" name="precioAhora" placeholder="10000" >
                     <label for="descripcion"><i class="fa fa-keyboard"></i> Descripción</label>
-                    <textarea name="descripcion" id="descripcion" rows="4" cols="50" placeholder="Buso 100% algodón color gris" required></textarea>
+                    <textarea id="descripcion" name="descripcion"  rows="4" cols="50" placeholder="Buso 100% algodón color gris"></textarea>
 
                     <label for="category"><i class="fa fa-list"></i> Categoría</label>
-                      <select name="category" required>
+                      <select name="category">
                         <option value="" selected disabled>Selecciona una categoría</option>
                         <% for (let i = 0; i < categories.length; i++) { %>
                           <option value="<%= categories[i].id %>"><%= categories[i].category %></option>
@@ -41,7 +47,7 @@
                     </div>
 
                     <label for="color"><i class="fa fa-palette"></i> Color</label>
-                      <select name="color" required>
+                      <select name="color">
                         <option value="" selected disabled>Selecciona un color</option>
                         <% for (let i = 0; i < colors.length; i++) { %>
                           <option value="<%= colors[i].id %>"><%= colors[i].color %></option>
@@ -57,7 +63,7 @@
                     <div class="row">
                       <div class="col-50">                
                         <label for="size"><i class="fa fa-ruler"></i> Talle</label>
-                          <select name="size" required>
+                          <select name="size">
                             <option value="" selected disabled>Selecciona un talle</option>
                             <% for (let i = 0; i < categories.length; i++) { %>
                               <% if (categories[i].category === 'Ropa') { %>
@@ -88,7 +94,7 @@
                       </div>
                       <div class="col-50">
                         <label for="productImage"><i class="fa fa-file-import"></i> Subir Imagen</label>
-                        <input type="file" name="productImage" value="Agregar Imagen">
+                        <input id= "userImage" type="file" name="productImage" value="Agregar Imagen">
                       </div>
                     </div>
                   </div>
@@ -105,52 +111,7 @@
         </div>
     </div>
   </div>    
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const categorySelect = document.querySelector("select[name='category']");
-      const nuevaCategoriaContainer = document.getElementById("nuevaCategoriaContainer");
-      const colorSelect = document.querySelector("select[name='color']");
-      const nuevoColorContainer = document.getElementById("nuevoColorContainer");
-      const precioAntesInput = document.getElementById("precioAntes");
-      const discountInput = document.getElementById("discount");
-      const precioAhoraInput = document.getElementById("precioAhora");
-      
-      precioAntesInput.addEventListener("input", function () {
-        calcularPrecioAhora();
-      });
-
-      discountInput.addEventListener("input", function () {
-        calcularPrecioAhora();
-      });
-
-      function calcularPrecioAhora() {
-        const precioAntes = parseFloat(precioAntesInput.value);
-        const discount = parseFloat(discountInput.value);
-        const precioAhora = precioAntes - (precioAntes * (discount / 100));
-
-        if (!isNaN(precioAhora)) {
-          precioAhoraInput.value = precioAhora.toFixed(2);
-        }
-      }
   
-      categorySelect.addEventListener("change", function () {
-        if (categorySelect.value === "nueva") {
-          nuevaCategoriaContainer.style.display = "block";
-        } else {
-          nuevaCategoriaContainer.style.display = "none";
-        }
-      });
-  
-      colorSelect.addEventListener("change", function () {
-        if (colorSelect.value === "nuevo") {
-          nuevoColorContainer.style.display = "block";
-        } else {
-          nuevoColorContainer.style.display = "none";
-        }
-      });
-
-      });
-  </script> 
   <%- include('../partials/footer.ejs') %>
 
 </body>
