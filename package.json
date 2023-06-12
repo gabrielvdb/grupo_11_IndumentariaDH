@@ -23,7 +23,7 @@
     "sequelize": "^6.31.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.20"
+    "nodemon": "^2.0.22"
   },
   "description": "Somos un E commerce dedicado a la venta de ropa de portiva para hombres de entre 20 - 50 años,\r Los cuales son practicantes frerecuentes o realizan actividades fisicas varias, \r con ingresos medio-altos.",
   "repository": {

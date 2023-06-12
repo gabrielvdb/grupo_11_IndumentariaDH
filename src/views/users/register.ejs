@@ -24,6 +24,7 @@
       </div>
     <% } %>
     
+    
 
     <label for="apellido"><b>Apellidos</b></label>
     <input 
@@ -60,11 +61,13 @@
       name="email"
       value= "<%= locals.oldData ? oldData.email : null %>"
     >
+    <span id="emailError" class="errores"></span>
     <% if (locals.errors && errors.email) { %>
       <div id="emailError" class="text-danger">
         <%= errors.email.msg  %>
       </div>
     <% } %>
+    
 
     <label for="contrasena"><b>Contraseña</b></label>
     <input
@@ -73,11 +76,13 @@
       placeholder="Contraseña" 
       name="contrasena"
     >
+    <span id="contrasenaError" class="errores"></span>
     <% if (locals.errors && errors.contrasena) { %>
       <div id="passError" class="text-danger">
         <%= errors.contrasena.msg  %>
       </div>
     <% } %>
+    
 
     <label for="categoria"><b>Categoria</b></label>
     <input 
@@ -91,7 +96,7 @@
       <div class="text-danger">
         <%= errors.categoria.msg  %>
       </div>
-    <% } %>
+    <% } %>  
 
     <label for="userImage"><i class="fa fa-file-import"></i> Subir Imagen</label>
     <input id= "userImage" type="file" name="userImage" value="Agregar Imagen" >
@@ -101,8 +106,9 @@
         <%= errors.userImage.msg  %>
       </div>
     <% } %>
+    
 
-    <button type="submit">Registrarse</button>
+    <button type="submit" id="button" >Registrarse</button>
     <!-- <label>
       <input type="checkbox" checked="checked" name="remember"> Recordar
     </label> -->
@@ -111,5 +117,6 @@
 
   <%- include('../partials/footer.ejs') %>
 
+<script src="/public/js/validacionFrontRegister.js"></script>
 </body>
 </html>
