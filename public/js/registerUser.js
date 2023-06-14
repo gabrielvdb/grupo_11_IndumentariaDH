@@ -102,14 +102,16 @@ window.addEventListener("load", () => {
     // --------- USER IMAGE ------------
   if (userImage.value === '') {
     userImage.style.border = '2px solid rgba(245, 134, 134, 0.76)';
-    errors.userImage = 'El campo imagen no puede estar vacío';
+    /* errors.userImage = 'El campo imagen no puede estar vacío'; */
+    errors.push('El campo imagen no puede estar vacío');
   } else {
     // Validar la extensión de archivo permitida
     let allowedExtensions = ['.jpg', '.png', '.gif', '.jpeg', '.JPG'];
     let fileExtension = userImage.value.substring(userImage.value.lastIndexOf('.')).toLowerCase();
     if (!allowedExtensions.includes(fileExtension)) {
       userImage.style.border = '2px solid rgba(245, 134, 134, 0.76)';
-      errors.userImage = 'La extensión del archivo no es válida. Solo se permiten archivos JPG, JPEG, PNG y GIF.';
+      /* errors.userImage = 'La extensión del archivo no es válida. Solo se permiten archivos JPG, JPEG, PNG y GIF.'; */
+      errors.push('La extensión del archivo no es válida. Solo se permiten archivos JPG, JPEG, PNG y GIF.');
     } 
   }
             

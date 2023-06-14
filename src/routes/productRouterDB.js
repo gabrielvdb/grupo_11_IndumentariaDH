@@ -2,23 +2,14 @@ const express = require("express");
 const router = express.Router();
 const multer = require("multer");
 const path = require("path");
+const { body } = require('express-validator')
 
 /* Middlewares */
 
+const uploadFile = require('../middlewares/multerMiddlewareProduct');
 const validations = require('../middlewares/validateProductMiddleware');
 
-/* configuración de Multer */
-
-let storage = multer.diskStorage({
-    destination: function(req, file, cb) {
-        cb(null, "public/images/products")
-    },
-    filename: function(req, file, cb) {
-        cb(null, file.fieldname + "-" + Date.now() + path.extname(file.originalname))
-    }
-})
-
-const upload = multer({storage: storage});
+/* Controller */
 
 const productControllerDB = require("../controllers/productControllerDB.js")
 
@@ -28,11 +19,11 @@ router.get("/detailProductDB/:id", productControllerDB.detail);
 
 /* Get y post de creación de productos */
 router.get('/create', productControllerDB.create); 
-router.post('/create', upload.single("productImage") ,productControllerDB.processCreate);
+router.post('/create', uploadFile.single("productImage"),validations,productControllerDB.processCreate);
 
 /* Get y Post de edición de productos */
 router.get('/edit/:id', productControllerDB.edit);
-router.post('/edit/:id', upload.single("productImage"),productControllerDB.processEdit);
+router.post('/edit/:id', uploadFile.single("productImage"),validations,productControllerDB.processEdit);
 
 /* Get y Delete de eliminación de productos */
 router.get('/delete/:id', productControllerDB.delete);

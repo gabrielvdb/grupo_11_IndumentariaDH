@@ -20,7 +20,13 @@
                   <div class="col-50">
                     <h3>Datos del producto</h3>
                     <label for="nombre"><i class="fa fa-tag"></i> Nombre del Producto</label>
-                    <input id="nombre" type="text"  name="nombre" placeholder="Buso Deportivo DH">
+                    <input id="nombre" type="text"  name="nombre" placeholder="Buso Deportivo DH" value="<%= locals.oldData ? locals.oldData.nombre : '' %>">
+                    <% if (locals && locals.errors && locals.errors.nombre) { %>
+                      <div class="text-danger">
+                        <%= locals.errors.nombre.msg  %>
+                      </div>
+                    <% } %>
+
                     <label for="rate"><i class="fa fa-star"></i> Puntuación</label>
                     <input type="text" id="rate" name="rate" placeholder="4.5">
                     <label for="precioAntes"><i class="fa fa-money-bill"></i> Precio Antes</label>
@@ -30,7 +36,12 @@
                     <label for="precioAhora"><i class="fa fa-dollar-sign"></i> Precio Ahora</label>
                     <input type="text" id="precioAhora" name="precioAhora" placeholder="10000" >
                     <label for="descripcion"><i class="fa fa-keyboard"></i> Descripción</label>
-                    <textarea id="descripcion" name="descripcion"  rows="4" cols="50" placeholder="Buso 100% algodón color gris"></textarea>
+                    <textarea id="descripcion" name="descripcion"  rows="4" cols="50" placeholder="Buso 100% algodón color gris" value="<%= locals.oldData ? locals.oldData.descripcion : '' %>"></textarea>
+                    <% if (locals && locals.errors && locals.errors.descripcion) { %>
+                      <div class="text-danger">
+                        <%= locals.errors.descripcion.msg  %>
+                      </div>
+                    <% } %>
 
                     <label for="category"><i class="fa fa-list"></i> Categoría</label>
                       <select name="category">
@@ -95,6 +106,11 @@
                       <div class="col-50">
                         <label for="productImage"><i class="fa fa-file-import"></i> Subir Imagen</label>
                         <input id= "userImage" type="file" name="productImage" value="Agregar Imagen">
+                        <% if (locals.errors && errors.productImage) { %>
+                          <div class="text-danger">
+                            <%= errors.productImage.msg  %>
+                          </div>
+                        <% } %>
                       </div>
                     </div>
                   </div>

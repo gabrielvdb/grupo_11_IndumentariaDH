@@ -62,12 +62,13 @@ const productControllerDB = {
     },
   
     processCreate: function (req, res) {
+
       // Obtener los valores de la categoría y el color seleccionados o nuevos
       const categoryId = req.body.category;
       const colorId = req.body.color;
       const nuevaCategoria = req.body.nuevaCategoria;
       const nuevoColor = req.body.nuevoColor;
-    
+
       // Validar los datos de entrada
     /* if (!req.body.nombre || req.body.nombre.length < 5) {
       return res.send("El nombre es obligatorio y debe tener al menos 5 caracteres.");

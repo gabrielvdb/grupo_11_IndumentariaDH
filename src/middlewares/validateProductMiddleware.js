@@ -6,8 +6,8 @@ module.exports = [
         .notEmpty().withMessage("Tienes que escribir un nombre válido")
         .isLength({ min: 5 }).withMessage("El nombre debe tener al menos 5 caracteres."),
     body("descripcion")
-        .notEmpty().withMessage("Tienes que escribir una descripcion válido")
-        .isLength({ min: 20 }).withMessage("La descripcion debe tener al menos 20 caracteres."),
+        .notEmpty().withMessage("Tienes que escribir un apellido válido")
+        .isLength({ min: 20 }).withMessage("El apellido debe tener al menos 20 caracteres."),
     body("userImage").custom((value, {req}) => {
         let file = req.file;
         let acceptedExtensions = [".jpg", ".png", ".gif", ".webp"];

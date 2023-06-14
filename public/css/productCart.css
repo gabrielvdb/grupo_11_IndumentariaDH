@@ -323,6 +323,18 @@ footer .website-logo{
     border-radius: 10px;
     padding: 10px;
 }
+
+.error-message {
+  color: #f44336;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.text-danger {
+  color: rgb(255, 0, 0);
+  font-size: 12px;
+  margin: 2px;
+}
   
 @media (max-width: 768px){
     
