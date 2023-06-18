@@ -11,12 +11,14 @@ const productRouter = require("./src/routes/productRouter.js");
 const userRouter = require("./src/routes/userRouter.js");
 const productRouterDB = require("./src/routes/productRouterDB.js");
 const categoryRouter = require("./src/routes/categoryRouter.js"); 
+const routerUsersApi = require('./src/routes/api/usersApi');
+const routerProductsApi = require('./src/routes/api/productsApi');
 
 const userLoggedMiddleware = require('./src/middlewares/userLoggedMiddleware');
 
 
 app.use(session({
-    secret: "Es un secreto, si tu mirada y la mia♫",
+    secret: "♫Es un secreto, si tu mirada y la mia♫",
     resave: false,
     saveUninitialized: false,
 }));
@@ -36,6 +38,8 @@ app.use("/product", productRouter);
 app.use("/users", userRouter);
 app.use("/products", productRouterDB);
 app.use("/categories", categoryRouter); 
+app.use("/api/users", routerUsersApi);
+app.use("/api/products", routerProductsApi);
 
 
 const port = process.env.PORT || 3000;
