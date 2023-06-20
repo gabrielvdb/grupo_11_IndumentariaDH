@@ -11,43 +11,31 @@ const Users = db.User;
 const usersApiControllers = {
 
     listUsers: (req, res) => {
-        db.User.findAndCountAll({ // Utilizamos findAndCountAll en lugar de findAll
+        db.User.findAll({
             include: [{ association: 'role' }],
         })
-        .then(result => {
-            const totalUsers = result.count; // Obtenemos el total de usuarios
-            const users = result.rows; // Obtenemos los usuarios
-    
+        .then(users => {
+            const totalUsers = users.length;
+
+            let usersWithDetailUrl = users.map(user => {
+                return {
+                    ...user.toJSON(),
+                    detail_url: `api/users/${user.id}` // Agrega la URL dinámica para el detalle del usuario
+                };
+            });
+
             let respuesta = {
                 meta: {
-                    status : 200,
-                    total: totalUsers, // Agregamos el total de usuarios a la respuesta
+                    status: 200,
+                    total: totalUsers,
                     url: 'api/users'
                 },
-                data: users
+                data: usersWithDetailUrl
             };
-            
+
             res.json(respuesta);
         });
     },
-    
-    /* detalleUsuario: (req, res) => {
-        db.User.findByPk(req.params.id,
-            {
-                include: [{ association: 'role' }],
-            })
-            .then(user => {
-                let respuesta = {
-                    meta: {
-                        status: 200,
-                        total: user.length,
-                        url: '/api/users/:id'
-                    },
-                    data: user
-                }
-                res.json(respuesta);
-            });
-    }, */
 
     detalleUsuario: (req, res) => {
         db.User.findByPk(req.params.id, {
@@ -55,7 +43,11 @@ const usersApiControllers = {
         })
         .then(user => {
             // Construir la URL de la imagen de perfil
-            const imageUrl = `https://localhost:3000/api/users/${user.userImage}`;
+            delete user.dataValues.password;
+            delete user.dataValues.role;
+            delete user.dataValues.roleid;
+
+            const imageUrl = `http://localhost:3000/api/users/${user.userImage}`;
     
             let respuesta = {
                 meta: {
